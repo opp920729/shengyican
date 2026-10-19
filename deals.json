@@ -1,5 +1,5 @@
 {
-"updatedAt": "2026/10/18 16:30",
+"updatedAt": "2026/10/20 06:52",
 "deals": [
 {
 "brand": "薄多義",
@@ -1143,6 +1143,625 @@
 "src": "https://www.callingtaiwan.com.tw/%E5%A4%96%E9%80%81%E5%84%AA%E6%83%A0%E7%B8%BD%E6%95%B4%E7%90%86-foodpanda-ubereats/",
 "title": "台南市限定：外送滿 149 元 5 折（最高折 80 元）",
 "id": "ue-region-86462"
+},
+{
+"brand": "麥當勞",
+"cat": "漢堡速食",
+"meals": [
+"早餐"
+],
+"title": "豬肉滿福堡加蛋＋冰經典美式咖啡",
+"price": 58,
+"people": 1,
+"how": "momo 買即享券，到店出示條碼兌換",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712174",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712174",
+"buyName": "momo",
+"mapq": "麥當勞",
+"id": "momo-mcd-15712174"
+},
+{
+"brand": "麥當勞",
+"cat": "漢堡速食",
+"meals": [
+"早餐"
+],
+"title": "吉事蛋堡＋冰經典美式咖啡",
+"price": 55,
+"people": 1,
+"how": "momo 買即享券，到店出示條碼兌換",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712173",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712173",
+"buyName": "momo",
+"mapq": "麥當勞",
+"ends": "2026-10-21",
+"note": "10/21 00:00 開賣，限時一天",
+"id": "momo-mcd-15712173"
+},
+{
+"brand": "摩斯漢堡",
+"cat": "漢堡速食",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "火腿歐姆蛋堡／蕃茄吉士蛋堡／培根雞蛋堡三選一＋大杯冰紅茶",
+"price": 70,
+"people": 1,
+"how": "momo 買即享券，到店出示條碼兌換",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15039742",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15039742",
+"buyName": "momo",
+"mapq": "摩斯漢堡",
+"id": "momo-mos-15039742"
+},
+{
+"brand": "摩斯漢堡",
+"cat": "漢堡速食",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "蛋堡三選一＋大杯冰紅茶（快閃價）",
+"price": 63,
+"people": 1,
+"how": "momo 買即享券，到店出示條碼兌換",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15760878",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15760878",
+"buyName": "momo",
+"mapq": "摩斯漢堡",
+"ends": "2026-10-21",
+"note": "10/21 00:00 開賣，限時快閃",
+"id": "momo-mos-15760878"
+},
+{
+"brand": "摩斯漢堡",
+"cat": "漢堡速食",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "蛋堡三選一＋咕咕雞堡＋大杯冰紅茶 2 杯",
+"price": 148,
+"people": 2,
+"how": "momo 買即享券，到店出示條碼兌換",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15760882",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15760882",
+"buyName": "momo",
+"mapq": "摩斯漢堡",
+"id": "momo-mos-15760882"
+},
+{
+"brand": "肯德基",
+"cat": "漢堡速食",
+"meals": [
+"早餐"
+],
+"title": "吮指脆雞燒餅套餐（早餐限定）",
+"price": 66,
+"people": 1,
+"how": "momo 買即享券，到店出示條碼兌換",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=14816149",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=14816149",
+"buyName": "momo",
+"mapq": "肯德基",
+"id": "momo-kfc-14816149"
+},
+{
+"brand": "肯德基",
+"cat": "漢堡速食",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "雙人原味脆雞堡套餐（早餐時段可用）",
+"price": 120,
+"people": 2,
+"how": "momo 買即享券，到店出示條碼兌換",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15627584",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15627584",
+"buyName": "momo",
+"mapq": "肯德基",
+"id": "momo-kfc-15627584"
+},
+{
+"brand": "麥當勞",
+"cat": "炸雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "麥克雞塊 10 塊＋大薯＋中杯可樂（快閃價）",
+"price": 149,
+"people": 1,
+"how": "momo 買即享券，到店出示條碼兌換",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712183",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712183",
+"buyName": "momo",
+"mapq": "麥當勞",
+"ends": "2026-10-20",
+"note": "只有今天能買",
+"id": "momo-mcd-15712183"
+},
+{
+"brand": "麥當勞",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "大麥克＋勁辣雞腿堡＋6 塊雞塊＋中薯 2＋中可樂 2",
+"price": 299,
+"people": 2,
+"how": "momo 買即享券，到店出示條碼兌換",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712180",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712180",
+"buyName": "momo",
+"mapq": "麥當勞",
+"id": "momo-mcd-15712180"
+},
+{
+"brand": "麥當勞",
+"cat": "炸雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "麥脆雞腿 4 塊＋6 塊雞塊＋中杯可樂 2 杯",
+"price": 330,
+"people": 3,
+"how": "momo 買即享券，到店出示條碼兌換",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712168",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712168",
+"buyName": "momo",
+"mapq": "麥當勞",
+"id": "momo-mcd-15712168"
+},
+{
+"brand": "麥當勞",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "麥香魚＋4 塊雞塊＋大薯＋中杯檸檬紅茶",
+"price": 149,
+"people": 1,
+"how": "momo 買即享券，到店出示條碼兌換",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712179",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712179",
+"buyName": "momo",
+"mapq": "麥當勞",
+"note": "10/21 00:00 開賣",
+"id": "momo-mcd-15712179"
+},
+{
+"brand": "摩斯漢堡",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "摩斯豬排堡＋黃金塔塔鱈魚堡＋大杯冰紅茶 2 杯",
+"price": 166,
+"people": 2,
+"how": "momo 買即享券，到店出示條碼兌換",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15760883",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15760883",
+"buyName": "momo",
+"mapq": "摩斯漢堡",
+"id": "momo-mos-15760883"
+},
+{
+"brand": "摩斯漢堡",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "摩斯豬排堡＋月亮薯條＋大杯冰紅茶",
+"price": 125,
+"people": 1,
+"how": "momo 買即享券，到店出示條碼兌換",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15609005",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15609005",
+"buyName": "momo",
+"mapq": "摩斯漢堡",
+"id": "momo-mos-15609005"
+},
+{
+"brand": "早安美芝城",
+"cat": "蛋餅早餐",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "雙蛋回歸餐（雙蛋蛋餅＋雞塊＋大杯早美皇奶）",
+"price": 129,
+"how": "門市點指定套餐",
+"ends": "2026-12-31",
+"note": "送《膽大黨》盲卡包和插旗，全台限量 8 萬份送完為止",
+"src": "https://supertaste.tvbs.com.tw/food/361861",
+"people": 1,
+"mapq": "早安美芝城",
+"id": "mzc-egg2"
+},
+{
+"brand": "早安美芝城",
+"cat": "蛋餅早餐",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "增肌爆能 QQ 球餐（豬排蛋堡＋QQ 球＋美式咖啡）",
+"price": 149,
+"how": "門市點指定套餐",
+"ends": "2026-12-31",
+"note": "送《膽大黨》盲卡包和插旗，限量送完為止",
+"src": "https://supertaste.tvbs.com.tw/food/361861",
+"people": 1,
+"mapq": "早安美芝城",
+"id": "mzc-qq"
+},
+{
+"brand": "麥味登",
+"cat": "麵",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "川味豆漿蛋白麵（嚐鮮價）",
+"price": 95,
+"orig": 105,
+"how": "門市點餐，APP 點餐加 35 元可加豬里肌",
+"note": "嚐鮮價期限依門市公告，請先確認",
+"src": "https://supertaste.tvbs.com.tw/food/361861",
+"people": 1,
+"mapq": "麥味登",
+"id": "mwd-pnoodle"
+},
+{
+"brand": "肯德基",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "原味脆雞堡＋咔啦脆雞＋小杯冰無糖紅茶",
+"price": 110,
+"how": "點餐報優惠代碼，或官網輸入",
+"code": "16579",
+"ends": "2027-03-31",
+"src": "https://cpok.tw/72462",
+"people": 1,
+"mapq": "肯德基",
+"id": "kfc-16579"
+},
+{
+"brand": "肯德基",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "花生脆雞堡＋8 塊上校雞塊＋小杯冰無糖紅茶",
+"price": 125,
+"how": "點餐報優惠代碼，或官網輸入",
+"code": "16580",
+"ends": "2027-03-31",
+"src": "https://cpok.tw/72462",
+"people": 1,
+"mapq": "肯德基",
+"id": "kfc-16580"
+},
+{
+"brand": "肯德基",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "脆雞柳堡＋魚圈圈＋小杯冰無糖紅茶",
+"price": 119,
+"how": "點餐報優惠代碼，或官網輸入",
+"code": "16581",
+"ends": "2027-03-31",
+"src": "https://cpok.tw/72462",
+"people": 1,
+"mapq": "肯德基",
+"id": "kfc-16581"
+},
+{
+"brand": "肯德基",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "雙層脆雞柳堡＋原味蛋撻＋小杯冰無糖紅茶",
+"price": 168,
+"how": "點餐報優惠代碼，或官網輸入",
+"code": "16582",
+"ends": "2027-03-31",
+"src": "https://cpok.tw/72462",
+"people": 1,
+"mapq": "肯德基",
+"id": "kfc-16582"
+},
+{
+"brand": "肯德基",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "青花椒脆雞柳堡＋黃金大蝦＋小杯冰無糖紅茶",
+"price": 149,
+"how": "點餐報優惠代碼，或官網輸入",
+"code": "16583",
+"ends": "2027-03-31",
+"src": "https://cpok.tw/72462",
+"people": 1,
+"mapq": "肯德基",
+"id": "kfc-16583"
+},
+{
+"brand": "肯德基",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "花生熔岩脆雞柳堡＋10 顆 QQ 球＋小杯冰無糖紅茶",
+"price": 155,
+"how": "點餐報優惠代碼，或官網輸入",
+"code": "16584",
+"ends": "2027-03-31",
+"src": "https://cpok.tw/72462",
+"people": 1,
+"mapq": "肯德基",
+"id": "kfc-16584"
+},
+{
+"brand": "拿坡里",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "大披薩",
+"price": 199,
+"orig": 390,
+"people": 2,
+"how": "內用或外帶",
+"ends": "2026-10-25",
+"src": "https://travel.udn.com/travel/story/7193/9823414",
+"mapq": "拿坡里",
+"id": "napoli-pizza199"
+},
+{
+"brand": "拿坡里",
+"cat": "炸雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "炸雞或烤雞 6 塊",
+"price": 209,
+"orig": 390,
+"people": 2,
+"how": "內用或外帶，加 30 元可換 6 塊脆皮雞腿",
+"ends": "2026-10-25",
+"src": "https://travel.udn.com/travel/story/7193/9823414",
+"mapq": "拿坡里",
+"id": "napoli-chicken6"
+},
+{
+"brand": "必勝客",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "9 吋薄脆小披薩＋飲料",
+"price": 111,
+"how": "必勝客 APP 會員線上結帳、外帶自取，每人每天 1 份",
+"code": "15595",
+"ends": "2026-10-22",
+"src": "https://travel.udn.com/travel/story/7193/9823414",
+"mapq": "必勝客",
+"people": 1,
+"id": "ph-15595"
+},
+{
+"brand": "必勝客",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "大披薩 10 種口味任選",
+"price": 199,
+"people": 2,
+"how": "外帶單筆，結帳輸入代碼",
+"code": "94199",
+"ends": "2026-10-30",
+"note": "只在平日：10/20–23、10/27–30",
+"src": "https://www.ettoday.net/news/20261003/3247862.htm",
+"mapq": "必勝客",
+"id": "ph-94199"
+},
+{
+"brand": "21風味館",
+"cat": "小吃",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "雞汁拌麵（31 週年價）",
+"price": 31,
+"how": "門市點餐",
+"ends": "2026-11-24",
+"note": "21TOGO、竹科台積店不適用",
+"src": "https://www.ettoday.net/news/20261003/3247862.htm",
+"people": 1,
+"mapq": "21風味館",
+"id": "21-noodle"
+},
+{
+"brand": "21風味館",
+"cat": "小吃",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "雞汁風味飯（31 週年價）",
+"price": 31,
+"how": "門市點餐",
+"ends": "2026-11-24",
+"note": "21TOGO、竹科台積店不適用",
+"src": "https://www.ettoday.net/news/20261003/3247862.htm",
+"people": 1,
+"mapq": "21風味館",
+"id": "21-rice"
+},
+{
+"brand": "21風味館",
+"cat": "小吃",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "地瓜薯條（中）（31 週年價）",
+"price": 31,
+"how": "門市點餐",
+"ends": "2026-11-24",
+"note": "21TOGO、竹科台積店不適用",
+"src": "https://www.ettoday.net/news/20261003/3247862.htm",
+"people": 1,
+"mapq": "21風味館",
+"id": "21-fries"
+},
+{
+"brand": "21風味館",
+"cat": "小吃",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "紫薯 QQ（31 週年價）",
+"price": 31,
+"how": "門市點餐",
+"ends": "2026-11-24",
+"note": "21TOGO、竹科台積店不適用",
+"src": "https://www.ettoday.net/news/20261003/3247862.htm",
+"people": 1,
+"mapq": "21風味館",
+"id": "21-qq"
+},
+{
+"brand": "21風味館",
+"cat": "炸雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "經典炸雞桶 5 入",
+"price": 276,
+"people": 2,
+"how": "門市點餐",
+"ends": "2026-11-24",
+"note": "21TOGO、竹科台積店不適用",
+"src": "https://www.ettoday.net/news/20261003/3247862.htm",
+"mapq": "21風味館",
+"id": "21-bucket5"
+},
+{
+"brand": "漢堡王",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "指定漢堡任選 2 個",
+"price": 99,
+"how": "臨櫃出示優惠券或報代碼",
+"ends": "2026-11-15",
+"note": "機場店、兒童樂園店、科技廠店不適用",
+"src": "https://www.ettoday.net/news/20261003/3247862.htm",
+"people": 1,
+"mapq": "漢堡王",
+"id": "bk-2burger99"
+},
+{
+"brand": "漢堡王",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "雙人分享餐（5 款任選）",
+"price": 199,
+"people": 2,
+"how": "臨櫃出示優惠券或報代碼",
+"ends": "2026-11-15",
+"note": "機場店、兒童樂園店、科技廠店不適用",
+"src": "https://www.ettoday.net/news/20261003/3247862.htm",
+"mapq": "漢堡王",
+"id": "bk-share199"
+},
+{
+"brand": "麥當勞",
+"cat": "漢堡速食",
+"meals": [
+"早餐",
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "手機點餐首購滿 150 元送 4 塊麥克雞塊",
+"gift": "送 4 塊雞塊",
+"how": "第一次用麥當勞 APP 手機點餐",
+"ends": "2026-11-03",
+"src": "https://www.beauty321.com/amp/post/73486",
+"people": 1,
+"mapq": "麥當勞",
+"id": "mcd-app-first"
+},
+{
+"brand": "麥當勞",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "星級遊戲：集幣抽 1+1 星級點 69 元組合券",
+"gift": "抽 69 元組合",
+"how": "到指定地點掃描星級幣 QR Code 累積，集滿可抽",
+"ends": "2026-11-03",
+"note": "券可用到 12/31，送完提前結束",
+"src": "https://www.beauty321.com/amp/post/73486",
+"people": 1,
+"mapq": "麥當勞",
+"id": "mcd-star69"
 }
 ]
 }
