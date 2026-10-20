@@ -18,7 +18,7 @@
 <style>
 /* Layout: a coupon book. Each deal is a coupon — price and details on the left, a tear-off stub with the code on the right. */
 :root{
-  --bg:#eef1f4; --card:#ffffff; --ink:#15181d; --muted:#5f6875; --faint:#8c94a0; --line:#dde2e8;
+  --bg:#eef1f4; --card:#ffffff; --ink:#15181d; --muted:#4f5864; --faint:#7d8590; --line:#dde2e8;
   --red:#d9341a; --yellow:#ffd400; --yellow-ink:#1d1700; --green:#0e7a4a; --chip:#e6eaef; --chip-on:#15181d; --chip-on-ink:#ffffff;
   --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
   --f-num:"Barlow Semi Condensed","Roboto Condensed","Arial Narrow",system-ui,sans-serif;
@@ -31,7 +31,7 @@
   --red:#ff6a52; --yellow:#ffd400; --yellow-ink:#1d1700; --green:#45c98b; --chip:#252c35; --chip-on:#eef1f4; --chip-on-ink:#0f1216; color-scheme:dark}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;padding-block:0 64px}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;padding-block:0 64px}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--card)}
 button,input,select{font:inherit;color:inherit}
 button{cursor:pointer}
@@ -69,48 +69,55 @@ input[type=number]{-moz-appearance:textfield;appearance:textfield}
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
 .cats{display:flex;gap:6px;overflow-x:auto;padding-block:8px 4px;scrollbar-width:none;margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px))}
 .cats::-webkit-scrollbar{display:none}
-.cats button{flex:none;border:0;background:var(--chip);border-radius:999px;padding:6px 12px;font-size:14px}
+.cats button{flex:none;border:0;background:var(--chip);border-radius:999px;padding:7px 14px;font-size:15px}
 .cats button .n{color:var(--muted);font-size:12px;margin-left:3px}
 .cats button[aria-pressed="true"]{background:var(--chip-on);color:var(--chip-on-ink)}
 .cats button[aria-pressed="true"] .n{color:inherit;opacity:.7}
-.sort{display:flex;align-items:center;gap:16px;padding-block:10px 8px;font-size:14px}
+.sort{display:flex;align-items:center;gap:18px;padding-block:12px 10px;font-size:15px}
 .sort button{border:0;background:none;padding:2px 0;color:var(--muted)}
 .sort button[aria-pressed="true"]{color:var(--ink);font-weight:700;box-shadow:inset 0 -2px var(--red)}
 .sort .count{margin-left:auto;color:var(--muted);font-size:13px}
 
 /* coupons */
-.list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.coupon{background:var(--card);border-radius:10px;overflow:hidden}
+.list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.coupon{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 1px 2px rgba(20,30,40,.06)}
+details.coupon[open]{box-shadow:0 0 0 2px var(--ink)}
 .coupon summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr 92px;min-height:118px}
 .coupon summary::-webkit-details-marker{display:none}
-.body{padding:12px 12px 12px 14px;min-width:0;display:flex;flex-direction:column;gap:4px}
-.who{font-size:12px;color:var(--muted);display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.who b{color:var(--ink);font-weight:700;font-size:13px}
-.t{font-weight:700;font-size:15px;line-height:1.4;text-wrap:pretty}
+.body{padding:14px 12px 14px 14px;min-width:0;display:flex;flex-direction:column;gap:5px}
+.who{display:flex;gap:10px;align-items:center;min-width:0}
+.logo{width:38px;height:38px;border-radius:10px;flex:none;display:grid;place-items:center;color:#fff;font-weight:900;font-size:15px;letter-spacing:-.03em;line-height:1;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+.logo.s{font-size:12px}
+.nm{display:flex;flex-direction:column;min-width:0;line-height:1.25}
+.nm b{font-size:14px;font-weight:700;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nm span{font-size:12px;color:var(--muted)}
+.t{font-weight:700;font-size:16px;line-height:1.45;text-wrap:pretty;margin-top:4px}
 .money{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-top:2px}
 .price{font-family:var(--f-num);font-weight:700;font-size:30px;line-height:1;color:var(--red);letter-spacing:-.01em}
 .price small{font-size:17px;margin-right:1px}
 .gift{font-weight:900;font-size:17px;color:var(--red);line-height:1.2}
 .orig{font-size:12px;color:var(--faint);text-decoration:line-through}
 .off{font-size:12px;font-weight:700;background:var(--yellow);color:var(--yellow-ink);padding:1px 6px;border-radius:4px}
-.each{font-size:12px;color:var(--muted)}
+.each{font-size:13px;color:var(--muted)}
 .tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:2px}
-.tag{font-size:11px;padding:1px 6px;border-radius:4px;background:var(--chip);color:var(--muted)}
+.tag{font-size:12px;padding:2px 7px;border-radius:4px;background:var(--chip);color:var(--muted)}
 .tag.hot{background:var(--red);color:#fff}
 .tag.buy{background:transparent;box-shadow:inset 0 0 0 1px var(--green);color:var(--green)}
 
 .stub{position:relative;border-left:2px dashed var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:10px 6px;text-align:center}
 .stub::before,.stub::after{content:"";position:absolute;left:-10px;width:18px;height:18px;border-radius:50%;background:var(--bg)}
 .stub::before{top:-9px}.stub::after{bottom:-9px}
-.stub .lbl{font-size:11px;color:var(--muted)}
+.stub .lbl{font-size:12px;color:var(--muted)}
+.stub .chev{width:18px;height:18px;color:var(--faint);margin-top:6px;transition:transform .15s}
+details[open] .stub .chev{transform:rotate(180deg)}
 .stub .code{font-family:var(--f-num);font-weight:700;font-size:20px;letter-spacing:.04em;line-height:1.1;word-break:break-all}
 .stub .code.zh{font-family:var(--f-body);font-size:14px;letter-spacing:0}
 .stub .way{font-size:13px;font-weight:700;line-height:1.3}
 .stub .more{font-size:11px;color:var(--faint);margin-top:4px}
 details[open] .stub .more{visibility:hidden}
 
-.detail{border-top:1px solid var(--line);padding:12px 14px 14px;display:grid;gap:10px;font-size:14px}
-.detail dl{margin:0;display:grid;grid-template-columns:4em 1fr;gap:6px 10px}
+.detail{border-top:1px solid var(--line);padding:14px;display:grid;gap:12px;font-size:15px;line-height:1.6}
+.detail dl{margin:0;display:grid;grid-template-columns:4.2em 1fr;gap:8px 12px}
 .detail dt{color:var(--muted)}
 .detail dd{margin:0;min-width:0}
 .acts{display:flex;flex-wrap:wrap;gap:8px}
@@ -256,6 +263,13 @@ function daysLeft(d){ if (!d.ends) return null; return Math.floor((new Date(d.en
 const active = d => !d.ends || d.ends >= todayStr;
 const inRegion = d => !Array.isArray(d.regions) || !d.regions.length || (region && d.regions.includes(region));
 const mapUrl = q => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q + (region ? " " + region : " 附近"));
+const MARKS = {"麥當勞":["麥","#c8102e"],"肯德基":["肯","#9e1b20"],"摩斯漢堡":["摩","#00703c"],"漢堡王":["王","#d35400"],"必勝客":["必","#b5121b"],"拿坡里":["拿","#1f7a3a"],"達美樂":["達","#0b5ea8"],"三商炸雞":["炸","#e0611a"],"三商巧福":["巧","#9b2d20"],"三商鮮五丼":["丼","#8a5a00"],"頂呱呱":["呱","#e4002b"],"21風味館":["21","#5b3a29"],"炸雞大獅":["獅","#b03a2e"],"全家":["全","#00843d"],"7-11":["7","#ee7623"],"Q Burger":["Q","#e60012"],"麥味登":["登","#e85d04"],"早安美芝城":["芝","#d1495b"],"晨間廚房":["晨","#e07b00"],"品川蘭":["蘭","#6b4226"],"金子半之助":["金","#2c2c2c"],"薄多義":["薄","#7a1f2b"],"Uber Eats":["U","#06a35a"],"foodpanda":["fp","#d70f64"],"壽司郎":["郎","#c8102e"],"藏壽司":["藏","#1b3c8a"],"這一小鍋":["鍋","#b03a2e"],"泰滾mini":["泰","#e67e22"],"賴山嶼麻辣燙":["賴","#922b21"],"Mister Donut":["MD","#e08e0b"],"Krispy Kreme":["KK","#00704a"],"哈根達斯":["哈","#5a2a82"],"DQ":["DQ","#d71920"],"CoCo都可":["Co","#e65a1e"],"50嵐":["50","#1f6fb2"],"TEA TOP 第一味":["一","#2e7d32"],"成真咖啡":["真","#4e342e"],"早到晚到":["早","#00897b"],"茶詠春":["詠","#33691e"]};
+const MARK_COLORS = ["#c0392b","#d35400","#16a085","#2471a3","#7d3c98","#b9770e","#1e8449","#a93226","#2e4053","#ca6f1e"];
+function brandMark(b){
+  if (MARKS[b]) return MARKS[b];
+  let h = 0; for (const ch of String(b)) h = (h * 31 + ch.codePointAt(0)) >>> 0;
+  return [String(b).trim().charAt(0) || "?", MARK_COLORS[h % MARK_COLORS.length]];
+}
 function el(tag, cls, text){ const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
 function fmtEnd(d){ if (!d.ends) return "未公布，以官方為準"; const [, m, dd] = d.ends.split("-"); return Number(m) + " 月 " + Number(dd) + " 日"; }
 function howShort(d){
@@ -310,7 +324,8 @@ function render(){
 function coupon(d){
   const li = el("li"); const det = el("details", "coupon"); const sum = el("summary");
   const body = el("div", "body");
-  const who = el("div", "who"); who.appendChild(el("b", null, d.brand)); who.appendChild(el("span", null, d.cat)); body.appendChild(who);
+  const who = el("div", "who"); const [lt, lc] = brandMark(d.brand); const lg = el("span", "logo" + (lt.length > 1 ? " s" : ""), lt); lg.style.background = lc; lg.setAttribute("aria-hidden", "true"); who.appendChild(lg);
+  const nm = el("div", "nm"); nm.appendChild(el("b", null, d.brand)); nm.appendChild(el("span", null, d.cat)); who.appendChild(nm); body.appendChild(who);
   body.appendChild(el("div", "t", d.title));
 
   const money = el("div", "money");
@@ -346,7 +361,7 @@ function coupon(d){
     stub.appendChild(el("span", "lbl", "使用方式"));
     stub.appendChild(el("span", "way", howShort(d)));
   }
-  stub.appendChild(el("span", "more", "點開看細節"));
+  const chev = document.createElementNS("http://www.w3.org/2000/svg", "svg"); chev.setAttribute("viewBox", "0 0 16 16"); chev.setAttribute("class", "chev"); chev.setAttribute("aria-hidden", "true"); chev.innerHTML = '<path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>'; stub.appendChild(chev);
   sum.appendChild(stub);
   det.appendChild(sum);
 
