@@ -1,5 +1,5 @@
 {
-"updatedAt": "2026/10/20 06:52",
+"updatedAt": "2026/10/20 11:52",
 "deals": [
 {
 "brand": "薄多義",
@@ -38,7 +38,7 @@
 },
 {
 "brand": "漢堡王",
-"cat": "點心飲料",
+"cat": "漢堡速食",
 "code": "P0390",
 "ends": "2026-11-15",
 "how": "臨櫃出示優惠券或報代碼",
@@ -56,7 +56,7 @@
 },
 {
 "brand": "漢堡王",
-"cat": "點心飲料",
+"cat": "漢堡速食",
 "code": "P0625",
 "ends": "2026-11-15",
 "how": "臨櫃出示優惠券或報代碼",
@@ -263,7 +263,7 @@
 },
 {
 "brand": "肯德基",
-"cat": "點心飲料",
+"cat": "飲料",
 "code": "26906",
 "ends": "2026-10-31",
 "how": "點餐報優惠代碼",
@@ -366,7 +366,7 @@
 },
 {
 "brand": "金子半之助",
-"cat": "飯",
+"cat": "丼飯",
 "ends": "2026-11-12",
 "gift": "下次買一送一",
 "how": "點任一主餐升級套餐，結帳拿券",
@@ -506,7 +506,7 @@
 "brand": "肯德基",
 "buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=14816136",
 "buyName": "momo",
-"cat": "點心飲料",
+"cat": "飲料",
 "how": "momo 買即享券，到店出示條碼兌換",
 "mapq": "肯德基",
 "meals": [
@@ -614,7 +614,7 @@
 "brand": "肯德基",
 "buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15711895",
 "buyName": "momo",
-"cat": "點心飲料",
+"cat": "漢堡速食",
 "how": "momo 買即享券，到店出示條碼兌換",
 "mapq": "肯德基",
 "meals": [
@@ -684,7 +684,7 @@
 },
 {
 "brand": "摩斯漢堡",
-"cat": "點心飲料",
+"cat": "飲料",
 "ends": "2026-10-31",
 "how": "門市點餐",
 "mapq": "摩斯漢堡",
@@ -700,7 +700,7 @@
 },
 {
 "brand": "摩斯漢堡",
-"cat": "點心飲料",
+"cat": "漢堡速食",
 "ends": "2026-12-31",
 "how": "MOS Order 座位點餐",
 "mapq": "摩斯漢堡",
@@ -770,7 +770,7 @@
 },
 {
 "brand": "Q Burger",
-"cat": "蛋餅早餐",
+"cat": "早餐店",
 "how": "平日 9:30 前到店點餐",
 "mapq": "Q Burger",
 "meals": [
@@ -874,7 +874,7 @@
 },
 {
 "brand": "三商鮮五丼",
-"cat": "飯",
+"cat": "丼飯",
 "ends": "2026-11-03",
 "how": "三商i美食卡 APP 免費領券",
 "mapq": "三商鮮五丼",
@@ -892,7 +892,7 @@
 },
 {
 "brand": "三商鮮五丼",
-"cat": "飯",
+"cat": "丼飯",
 "ends": "2026-11-03",
 "how": "三商i美食卡 APP 免費領券",
 "mapq": "三商鮮五丼",
@@ -1375,7 +1375,7 @@
 },
 {
 "brand": "早安美芝城",
-"cat": "蛋餅早餐",
+"cat": "早餐店",
 "meals": [
 "早餐",
 "午餐"
@@ -1392,7 +1392,7 @@
 },
 {
 "brand": "早安美芝城",
-"cat": "蛋餅早餐",
+"cat": "早餐店",
 "meals": [
 "早餐",
 "午餐"
@@ -1534,7 +1534,7 @@
 },
 {
 "brand": "拿坡里",
-"cat": "漢堡速食",
+"cat": "披薩",
 "meals": [
 "午餐",
 "晚餐",
@@ -1570,7 +1570,7 @@
 },
 {
 "brand": "必勝客",
-"cat": "漢堡速食",
+"cat": "披薩",
 "meals": [
 "午餐",
 "晚餐"
@@ -1587,7 +1587,7 @@
 },
 {
 "brand": "必勝客",
-"cat": "漢堡速食",
+"cat": "披薩",
 "meals": [
 "午餐",
 "晚餐"
@@ -1762,6 +1762,569 @@
 "people": 1,
 "mapq": "麥當勞",
 "id": "mcd-star69"
+},
+{
+"brand": "Mister Donut",
+"cat": "甜點",
+"meals": [
+"晚餐",
+"宵夜"
+],
+"title": "閉店前一小時甜甜圈買 2 送 1",
+"gift": "買 2 送 1",
+"pct": 0.33,
+"people": 3,
+"how": "直營門市閉店前 1 小時，看到「珍食計畫買2送1」標示就能用",
+"note": "外送和 7-11 櫃位不適用，不是每天都有，請先確認",
+"src": "https://www.nownews.com/news/6883525",
+"mapq": "Mister Donut",
+"id": "misterdonut-zhenshi"
+},
+{
+"brand": "全家",
+"cat": "冰品",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "Famiice 霜淇淋 2 支",
+"price": 55,
+"people": 2,
+"how": "門市直接購買",
+"ends": "2026-10-20",
+"src": "https://www.chinatimes.com/realtimenews/20261019001734-260405",
+"mapq": "全家便利商店",
+"id": "fm-softserve2"
+},
+{
+"brand": "全家",
+"cat": "冰品",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "桂冠芋角牛奶Q雪糕買一送一",
+"gift": "買一送一",
+"pct": 0.5,
+"people": 2,
+"how": "門市直接購買",
+"ends": "2026-10-20",
+"src": "https://www.nownews.com/news/6884028",
+"mapq": "全家便利商店",
+"id": "fm-taroice-bogo"
+},
+{
+"brand": "全家",
+"cat": "冰品",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "阿奇儂乳酸脆樂冰買一送一",
+"gift": "買一送一",
+"pct": 0.5,
+"people": 2,
+"how": "門市直接購買",
+"ends": "2026-10-20",
+"src": "https://www.nownews.com/news/6884028",
+"mapq": "全家便利商店",
+"id": "fm-lactic-bogo"
+},
+{
+"brand": "哈根達斯",
+"cat": "冰品",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "冰淇淋迷你杯 5 入（外帶）",
+"price": 638,
+"orig": 695,
+"people": 5,
+"how": "momo 買即享券，到門市出示條碼兌換",
+"note": "原價以單杯券 139 元計算",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15711885",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15711885",
+"buyName": "momo",
+"mapq": "哈根達斯",
+"id": "momo-hd-15711885"
+},
+{
+"brand": "哈根達斯",
+"cat": "冰品",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "冰淇淋迷你杯 10 入（外帶）",
+"price": 1276,
+"orig": 1390,
+"people": 10,
+"how": "momo 買即享券，到門市出示條碼兌換",
+"note": "原價以單杯券 139 元計算",
+"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15711886",
+"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15711886",
+"buyName": "momo",
+"mapq": "哈根達斯",
+"id": "momo-hd-15711886"
+},
+{
+"brand": "TEA TOP 第一味",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "奶茶第二杯半價（北部 2 杯）",
+"price": 90,
+"orig": 120,
+"people": 2,
+"how": "出示食尚玩家 APP 的優惠卡",
+"ends": "2026-10-30",
+"note": "中南部 2 杯 82 元（原價 110 元）",
+"src": "https://supertaste.tvbs.com.tw/pack/361986",
+"mapq": "TEA TOP 第一味",
+"id": "teatop-half"
+},
+{
+"brand": "成真咖啡",
+"cat": "飲料",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "外帶咖啡飲品買一送一（190 元以下）",
+"gift": "買一送一",
+"pct": 0.5,
+"people": 2,
+"how": "出示食尚玩家 APP 的優惠卡，限外帶",
+"ends": "2026-10-27",
+"src": "https://supertaste.tvbs.com.tw/pack/361986",
+"mapq": "成真咖啡",
+"id": "chengzhen-bogo"
+},
+{
+"brand": "早到晚到",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "紅茶、冷泡茶或小時候奶茶同品項買一送一",
+"gift": "買一送一",
+"pct": 0.5,
+"people": 2,
+"how": "出示食尚玩家 APP 的優惠卡",
+"ends": "2026-10-28",
+"src": "https://supertaste.tvbs.com.tw/pack/361986",
+"mapq": "早到晚到",
+"id": "zaodao-bogo"
+},
+{
+"brand": "茶詠春",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "單筆滿 200 元打 85 折",
+"gift": "85 折",
+"pct": 0.15,
+"how": "出示食尚玩家 APP 的優惠卡",
+"ends": "2026-10-26",
+"src": "https://supertaste.tvbs.com.tw/pack/361986",
+"people": 1,
+"mapq": "茶詠春",
+"id": "chayongchun-85"
+},
+{
+"brand": "CoCo都可",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "芒果綠茶、茉香奶綠凍、粉粿椰奶拿鐵買一送一（大杯）",
+"gift": "買一送一",
+"pct": 0.5,
+"people": 2,
+"how": "用 foodpanda 點",
+"ends": "2026-11-11",
+"src": "https://www.beauty321.com/post/73497",
+"mapq": "CoCo都可",
+"id": "coco-fp-bogo"
+},
+{
+"brand": "50嵐",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "非純茶飲料買 5 送 1",
+"gift": "買 5 送 1",
+"pct": 0.167,
+"people": 6,
+"how": "門市點餐",
+"note": "依各門市規定",
+"src": "https://www.beauty321.com/post/73497",
+"mapq": "50嵐",
+"id": "50lan-5plus1"
+},
+{
+"brand": "晨間廚房",
+"cat": "早餐店",
+"meals": [
+"早餐"
+],
+"title": "芋泥炸蛋餅 8 折",
+"price": 48,
+"orig": 60,
+"how": "出示食尚玩家 APP 的優惠卡，內用外帶皆可，每人限 1 份",
+"ends": "2026-10-27",
+"src": "https://supertaste.tvbs.com.tw/pack/361986",
+"people": 1,
+"mapq": "晨間廚房",
+"id": "morningkitchen-taro"
+},
+{
+"brand": "泰滾mini",
+"cat": "火鍋",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "免收鍋底費",
+"gift": "免鍋底費",
+"how": "出示食尚玩家 APP 的優惠卡，1 人以上",
+"ends": "2026-11-01",
+"note": "最多省 98 元",
+"src": "https://supertaste.tvbs.com.tw/pack/361986",
+"people": 1,
+"mapq": "泰滾mini",
+"id": "taigunmini-base"
+},
+{
+"brand": "賴山嶼麻辣燙",
+"cat": "火鍋",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "店內消費滿 300 元送氣泡飲",
+"gift": "送飲料",
+"how": "出示食尚玩家 APP 的優惠卡",
+"ends": "2026-11-01",
+"note": "贈品價值 79 元",
+"src": "https://supertaste.tvbs.com.tw/pack/361986",
+"people": 1,
+"mapq": "賴山嶼麻辣燙",
+"id": "laishanyu-drink"
+},
+{
+"brand": "這一小鍋",
+"cat": "火鍋",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "身分證字號有 1 或 0 送梅花豬肉；兩個都有主餐 8 折",
+"gift": "送梅花豬",
+"how": "結帳出示身分證",
+"note": "活動結束日未公布，請先確認",
+"src": "https://www.orissic.com/news/event/",
+"people": 1,
+"mapq": "這一小鍋",
+"id": "orissic-id"
+},
+{
+"brand": "壽司郎",
+"cat": "壽司",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "野生南方黑鮪魚中腹",
+"price": 40,
+"how": "門市點餐",
+"ends": "2026-10-30",
+"note": "只有平日：10/20–23、10/27–30",
+"src": "https://travel.ettoday.net/article/3257352.htm",
+"people": 1,
+"mapq": "壽司郎",
+"id": "sushiro-toro40"
+},
+{
+"brand": "藏壽司",
+"cat": "壽司",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "焦香奶油淋醬燒炙鮭魚肚（限時價）",
+"price": 40,
+"how": "門市點餐",
+"note": "結束日未公布",
+"src": "https://ctinews.com/news/items/rbW4mVYgaL",
+"people": 1,
+"mapq": "藏壽司",
+"id": "kura-salmon40"
+},
+{
+"brand": "藏壽司",
+"cat": "壽司",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "人氣海老三貫",
+"price": 60,
+"how": "門市點餐",
+"note": "結束日未公布",
+"src": "https://ctinews.com/news/items/rbW4mVYgaL",
+"people": 1,
+"mapq": "藏壽司",
+"id": "kura-shrimp60"
+},
+{
+"brand": "foodpanda",
+"cat": "滷味",
+"meals": [
+"晚餐",
+"宵夜"
+],
+"title": "滷味外帶自取 7 折（最高折 30 元，可用 3 次）",
+"gift": "自取 7 折",
+"pct": 0.3,
+"how": "在 foodpanda 點附近滷味，選外帶自取並輸入代碼",
+"code": "自取感謝你",
+"note": "適用對象以 APP 顯示為準",
+"src": "https://today.line.me/tw/v3/article/wJvVxal",
+"mapq": "滷味",
+"people": 1,
+"id": "fp-pickup-luwei"
+},
+{
+"brand": "Uber Eats",
+"cat": "滷味",
+"meals": [
+"晚餐",
+"宵夜"
+],
+"title": "Uber One 會員滷味外帶自取 7 折（最高折 60 元，可用 5 次）",
+"gift": "自取 7 折",
+"pct": 0.3,
+"how": "在 Uber Eats 點附近滷味，選外帶自取並輸入代碼，要綁信用卡",
+"code": "十月來外帶",
+"ends": "2026-10-31",
+"src": "https://supertaste.tvbs.com.tw/food/361747",
+"mapq": "滷味",
+"people": 1,
+"id": "ue-pickup-luwei"
+},
+{
+"brand": "全家",
+"cat": "超商",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "uno 義大利麵＋指定無咖啡因飲品",
+"price": 99,
+"orig": 129,
+"how": "門市直接購買",
+"note": "鮮蝦、卡波納拉、拿坡里燻腸口味，部分組合 109 元",
+"src": "https://www.chinatimes.com/realtimenews/20261019001734-260405",
+"mapq": "全家便利商店",
+"people": 1,
+"id": "fm-uno-pasta"
+},
+{
+"brand": "Krispy Kreme",
+"cat": "甜點",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "萬聖節限定甜甜圈 6 入",
+"price": 299,
+"orig": 360,
+"people": 3,
+"how": "門市購買",
+"ends": "2026-10-31",
+"note": "原價以單顆 60 元推算",
+"src": "https://www.marieclaire.com.tw/lifestyle/taste/96393",
+"mapq": "Krispy Kreme",
+"id": "krispy-hw6"
+},
+{
+"brand": "Krispy Kreme",
+"cat": "甜點",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "萬聖節限定甜甜圈 12 入",
+"price": 499,
+"orig": 720,
+"people": 6,
+"how": "門市購買",
+"ends": "2026-10-31",
+"note": "原價以單顆 60 元推算",
+"src": "https://www.marieclaire.com.tw/lifestyle/taste/96393",
+"mapq": "Krispy Kreme",
+"id": "krispy-hw12"
+},
+{
+"brand": "肯德基",
+"cat": "甜點",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "原味蛋撻 2 入",
+"price": 66,
+"orig": 96,
+"people": 2,
+"how": "肯德基 APP 或點餐報代碼",
+"code": "50526",
+"note": "結束日未公布，請先確認",
+"src": "https://applealmond.com/posts/315897",
+"mapq": "肯德基",
+"id": "kfc-50526"
+},
+{
+"brand": "肯德基",
+"cat": "炸雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "咔啦脆雞＋原味蛋撻 2 入＋小杯冰無糖紅茶",
+"price": 124,
+"how": "點餐報優惠代碼",
+"code": "16517",
+"ends": "2027-01-31",
+"src": "https://cpok.tw/71806",
+"people": 1,
+"mapq": "肯德基",
+"id": "kfc-16517"
+},
+{
+"brand": "全家",
+"cat": "冰品",
+"meals": [
+"晚餐"
+],
+"title": "霜淇淋晚間特價",
+"price": 29,
+"how": "每天 17:00–20:59 到門市購買",
+"note": "結束日未公布",
+"src": "https://www.marieclaire.com.tw/lifestyle/taste/96393",
+"mapq": "全家便利商店",
+"people": 1,
+"id": "fm-softserve-night"
+},
+{
+"brand": "全家",
+"cat": "冰品",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "買霜淇淋加 10 元換巫婆手指餅乾",
+"price": 10,
+"orig": 22,
+"how": "購買霜淇淋時加購",
+"ends": "2026-11-10",
+"src": "https://www.marieclaire.com.tw/lifestyle/taste/96393",
+"mapq": "全家便利商店",
+"people": 1,
+"id": "fm-witchfinger"
+},
+{
+"brand": "DQ",
+"cat": "冰品",
+"meals": [
+"晚餐"
+],
+"title": "指定暴風雪 5 折",
+"gift": "5 折",
+"pct": 0.5,
+"how": "平日 17:00–20:00 到店，出示交通票證",
+"ends": "2026-10-23",
+"regions": [
+"台北市"
+],
+"note": "只有台北京站店",
+"src": "https://www.marieclaire.com.tw/lifestyle/taste/96393",
+"mapq": "DQ 京站",
+"people": 1,
+"id": "dq-blizzard-half"
+},
+{
+"brand": "頂呱呱",
+"cat": "炸雞",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "呱呱包雙入重量餐（呱呱包 2＋青花椒雞＋地瓜薯條＋甜甜包＋中可樂）",
+"price": 259,
+"orig": 376,
+"people": 2,
+"how": "門市點餐",
+"ends": "2026-10-26",
+"note": "10/22 才開始",
+"src": "https://www.chinatimes.com/realtimenews/20261019001915-260405",
+"mapq": "頂呱呱",
+"id": "tkk-double259"
+},
+{
+"brand": "麥當勞",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "APP 單筆滿 200 元送中薯",
+"gift": "送中薯",
+"how": "麥當勞 APP 點餐",
+"ends": "2026-10-25",
+"src": "https://www.chinatimes.com/realtimenews/20261019001915-260405",
+"people": 1,
+"mapq": "麥當勞",
+"id": "mcd-app-fries200"
+},
+{
+"brand": "麥當勞",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "中杯可樂或雪碧買一送一",
+"gift": "買一送一",
+"pct": 0.5,
+"people": 2,
+"how": "麥當勞 APP 點餐",
+"ends": "2026-10-25",
+"src": "https://www.chinatimes.com/realtimenews/20261019001915-260405",
+"mapq": "麥當勞",
+"id": "mcd-app-coke-bogo"
 }
 ]
 }
