@@ -1,24 +1,6 @@
 {
-"updatedAt": "2026/10/20 11:52",
+"updatedAt": "2026/10/21 09:05",
 "deals": [
-{
-"brand": "薄多義",
-"cat": "麵",
-"ends": "2026-10-20",
-"gift": "買一送一",
-"how": "限外帶",
-"mapq": "薄多義",
-"meals": [
-"午餐",
-"晚餐"
-],
-"note": "高雄美術館、新竹竹北店不適用",
-"pct": 0.5,
-"people": 2,
-"src": "https://info.talk.tw/buy-one-get-one/",
-"title": "臘腸金沙雞肉奶油麵買一送一",
-"id": "bdy-pasta"
-},
 {
 "brand": "漢堡王",
 "cat": "漢堡速食",
@@ -346,25 +328,6 @@
 "id": "kfc-50514"
 },
 {
-"brand": "肯德基",
-"cat": "炸雞",
-"code": "50551",
-"ends": "2026-10-19",
-"gift": "買一送一",
-"how": "點餐報優惠代碼",
-"mapq": "肯德基",
-"meals": [
-"午餐",
-"晚餐",
-"宵夜"
-],
-"pct": 0.5,
-"people": 2,
-"src": "https://info.talk.tw/buy-one-get-one/",
-"title": "咔啦脆雞套餐買一送一（4 塊脆雞＋2 杯小杯無糖綠茶）",
-"id": "kfc-50551"
-},
-{
 "brand": "金子半之助",
 "cat": "丼飯",
 "ends": "2026-11-12",
@@ -574,44 +537,6 @@
 },
 {
 "brand": "肯德基",
-"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15633783",
-"buyName": "momo",
-"cat": "炸雞",
-"ends": "2026-10-18",
-"how": "momo 買即享券，到店出示條碼兌換",
-"mapq": "肯德基",
-"meals": [
-"晚餐",
-"宵夜"
-],
-"note": "限時快閃，只能今天買；券的使用期限看商品頁",
-"people": 3,
-"price": 299,
-"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15633783",
-"title": "爆脆無骨雞腿霸 5 塊＋原味蛋撻 6 入",
-"id": "momo-kfc-15633783"
-},
-{
-"brand": "肯德基",
-"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15633784",
-"buyName": "momo",
-"cat": "炸雞",
-"ends": "2026-10-19",
-"how": "momo 買即享券，到店出示條碼兌換",
-"mapq": "肯德基",
-"meals": [
-"晚餐",
-"宵夜"
-],
-"note": "10/19 00:00 開賣，限時快閃",
-"people": 3,
-"price": 299,
-"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15633784",
-"title": "咔啦脆雞 4 塊＋原味蛋撻 6 入＋飲料 2 杯",
-"id": "momo-kfc-15633784"
-},
-{
-"brand": "肯德基",
 "buy": "https://s.momoshop.com.tw/s/waLgZUcP",
 "buyName": "momo",
 "cat": "漢堡速食",
@@ -662,25 +587,6 @@
 "src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15711973",
 "title": "9 塊炸雞桶",
 "id": "momo-tkk-15711973"
-},
-{
-"brand": "頂呱呱",
-"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712525",
-"buyName": "momo",
-"cat": "炸雞",
-"ends": "2026-10-20",
-"how": "momo 買即享券，到店出示條碼兌換",
-"mapq": "頂呱呱",
-"meals": [
-"午餐",
-"晚餐"
-],
-"note": "10/20 00:00 開賣，限時快閃",
-"people": 1,
-"price": 129,
-"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712525",
-"title": "獨家經典餐",
-"id": "momo-tkk-15712525"
 },
 {
 "brand": "摩斯漢堡",
@@ -1266,26 +1172,6 @@
 },
 {
 "brand": "麥當勞",
-"cat": "炸雞",
-"meals": [
-"午餐",
-"晚餐",
-"宵夜"
-],
-"title": "麥克雞塊 10 塊＋大薯＋中杯可樂（快閃價）",
-"price": 149,
-"people": 1,
-"how": "momo 買即享券，到店出示條碼兌換",
-"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712183",
-"buy": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712183",
-"buyName": "momo",
-"mapq": "麥當勞",
-"ends": "2026-10-20",
-"note": "只有今天能買",
-"id": "momo-mcd-15712183"
-},
-{
-"brand": "麥當勞",
 "cat": "漢堡速食",
 "meals": [
 "午餐",
@@ -1779,59 +1665,6 @@
 "src": "https://www.nownews.com/news/6883525",
 "mapq": "Mister Donut",
 "id": "misterdonut-zhenshi"
-},
-{
-"brand": "全家",
-"cat": "冰品",
-"meals": [
-"午餐",
-"晚餐",
-"宵夜"
-],
-"title": "Famiice 霜淇淋 2 支",
-"price": 55,
-"people": 2,
-"how": "門市直接購買",
-"ends": "2026-10-20",
-"src": "https://www.chinatimes.com/realtimenews/20261019001734-260405",
-"mapq": "全家便利商店",
-"id": "fm-softserve2"
-},
-{
-"brand": "全家",
-"cat": "冰品",
-"meals": [
-"午餐",
-"晚餐",
-"宵夜"
-],
-"title": "桂冠芋角牛奶Q雪糕買一送一",
-"gift": "買一送一",
-"pct": 0.5,
-"people": 2,
-"how": "門市直接購買",
-"ends": "2026-10-20",
-"src": "https://www.nownews.com/news/6884028",
-"mapq": "全家便利商店",
-"id": "fm-taroice-bogo"
-},
-{
-"brand": "全家",
-"cat": "冰品",
-"meals": [
-"午餐",
-"晚餐",
-"宵夜"
-],
-"title": "阿奇儂乳酸脆樂冰買一送一",
-"gift": "買一送一",
-"pct": 0.5,
-"people": 2,
-"how": "門市直接購買",
-"ends": "2026-10-20",
-"src": "https://www.nownews.com/news/6884028",
-"mapq": "全家便利商店",
-"id": "fm-lactic-bogo"
 },
 {
 "brand": "哈根達斯",
