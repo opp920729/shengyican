@@ -1,5 +1,5 @@
 {
-"updatedAt": "2026/10/21 09:08",
+"updatedAt": "2026/10/21 11:23",
 "deals": [
 {
 "brand": "漢堡王",
@@ -2410,6 +2410,44 @@
 "src": "https://www.nownews.com/news/6879357",
 "mapq": "繼光香香雞",
 "people": 1
+},
+{
+"id": "711-izhenshi",
+"brand": "7-11",
+"cat": "便當",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "便當、飯糰、麵食即期品 i珍食 65 折",
+"pct": 0.35,
+"gift": "65 折",
+"people": 1,
+"how": "OPENPOINT APP「i珍食地圖」查附近門市庫存，到店直接結帳",
+"note": "賞味期限前 8 小時起打折，品項和數量看門市；部分支付優惠不能併用",
+"src": "https://www.money101.com.tw/blog/%E8%B6%85%E5%95%86-%E9%AE%AE%E9%A3%9F-%E7%89%B9%E5%83%B9%E6%99%82%E6%AE%B5",
+"mapq": "7-11",
+"icon": "bento"
+},
+{
+"id": "fm-friendly",
+"brand": "全家",
+"cat": "便當",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "便當、飯糰、麵食即期品友善食光 7 折",
+"pct": 0.3,
+"gift": "7 折",
+"people": 1,
+"how": "全家 APP「地圖趣」查友善食光庫存，到店直接結帳",
+"note": "效期前 7 小時起打折，常見 10:00、17:00 後出現；品項看門市",
+"src": "https://www.money101.com.tw/blog/%E8%B6%85%E5%95%86-%E9%AE%AE%E9%A3%9F-%E7%89%B9%E5%83%B9%E6%99%82%E6%AE%B5",
+"mapq": "全家",
+"icon": "bento"
 }
 ]
 }
