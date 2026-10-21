@@ -1,5 +1,5 @@
 {
-"updatedAt": "2026/10/21 09:05",
+"updatedAt": "2026/10/21 09:08",
 "deals": [
 {
 "brand": "漢堡王",
@@ -2158,6 +2158,257 @@
 "src": "https://www.chinatimes.com/realtimenews/20261019001915-260405",
 "mapq": "麥當勞",
 "id": "mcd-app-coke-bogo"
+},
+{
+"id": "napoli-tart6",
+"brand": "拿坡里",
+"cat": "甜點",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "經典原味蛋塔 6 入",
+"price": 199,
+"orig": 270,
+"people": 2,
+"how": "門市點餐",
+"ends": "2026-10-25",
+"note": "月月慶，數量和門市依拿坡里公告",
+"src": "https://supertaste.tvbs.com.tw/pack/362009",
+"mapq": "拿坡里"
+},
+{
+"id": "ph-tart6plus6",
+"brand": "必勝客",
+"cat": "甜點",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "經典原味蛋撻 6 顆，送紅豆奶皇蛋撻 6 顆",
+"price": 294,
+"people": 4,
+"gift": "買 6 送 6",
+"how": "門市或官網、PK APP 點餐",
+"ends": "2026-11-02",
+"note": "供應數量與門市依必勝客公告",
+"src": "https://supertaste.tvbs.com.tw/pack/362009",
+"mapq": "必勝客"
+},
+{
+"id": "ph-halloween-pizza",
+"brand": "必勝客",
+"cat": "披薩",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "萬聖節香辣麻奶火山濃起司漢堡排比薩",
+"price": 628,
+"people": 3,
+"pct": 0.4,
+"gift": "6 折",
+"how": "官網或 PK APP 點餐",
+"ends": "2026-11-02",
+"note": "限時 6 折，628 元為折後價",
+"src": "https://supertaste.tvbs.com.tw/pack/362009",
+"mapq": "必勝客"
+},
+{
+"id": "711-xl-latte10",
+"brand": "7-11",
+"cat": "超商",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "CITY CAFE 特大杯拿鐵 10 杯",
+"price": 480,
+"people": 10,
+"how": "OPENPOINT APP 行動隨時取寄杯，再到門市兌換",
+"ends": "2026-10-31",
+"note": "10/22 起開賣，每杯約 48 元",
+"src": "https://www.ctee.com.tw/news/20261019700981-431401",
+"mapq": "7-11"
+},
+{
+"id": "711-xl-americano10",
+"brand": "7-11",
+"cat": "超商",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "CITY CAFE 特大杯美式 10 杯",
+"price": 360,
+"people": 10,
+"how": "OPENPOINT APP 行動隨時取寄杯，再到門市兌換",
+"ends": "2026-10-31",
+"note": "10/22 起開賣，每杯約 36 元",
+"src": "https://www.ctee.com.tw/news/20261019700981-431401",
+"mapq": "7-11"
+},
+{
+"id": "711-americano17",
+"brand": "7-11",
+"cat": "超商",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "CITY CAFE 大杯濃萃美式 17 杯",
+"price": 500,
+"people": 17,
+"how": "OPENPOINT APP 行動隨時取寄杯，再到門市兌換",
+"ends": "2026-10-27",
+"note": "每杯約 29 元",
+"src": "https://www.ctee.com.tw/news/20261019700981-431401",
+"mapq": "7-11"
+},
+{
+"id": "711-latte17",
+"brand": "7-11",
+"cat": "超商",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "CITY CAFE 大杯濃萃拿鐵 17 杯",
+"price": 700,
+"people": 17,
+"how": "OPENPOINT APP 行動隨時取寄杯，再到門市兌換",
+"ends": "2026-10-27",
+"note": "每杯約 41 元",
+"src": "https://www.ctee.com.tw/news/20261019700981-431401",
+"mapq": "7-11"
+},
+{
+"id": "hilife-coffee30",
+"brand": "萊爾富",
+"cat": "超商",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "Hi café 大杯特濃美式或拿鐵",
+"gift": "買 30 送 30",
+"pct": 0.5,
+"how": "萊爾富 APP 寄杯",
+"ends": "2026-10-31",
+"src": "https://www.ctee.com.tw/news/20261019700981-431401",
+"mapq": "萊爾富",
+"people": 1
+},
+{
+"id": "fm-letstea-2nd",
+"brand": "全家",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "Let's Tea 全品項，第 2 杯 8 折",
+"gift": "第 2 杯 8 折",
+"pct": 0.1,
+"people": 2,
+"how": "門市結帳",
+"ends": "2026-11-10",
+"src": "https://www.ctee.com.tw/news/20261019700981-431401",
+"mapq": "全家"
+},
+{
+"id": "ok-flavor2",
+"brand": "OKmart",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "OK CAFE 指定風味飲品任選 2 杯",
+"price": 69,
+"orig": 78,
+"people": 2,
+"how": "門市結帳",
+"ends": "2026-11-11",
+"note": "單杯 39 元；原價以單杯 39 元乘 2 推算",
+"src": "https://supertaste.tvbs.com.tw/pack/362009",
+"mapq": "OK超商"
+},
+{
+"id": "coco-value",
+"brand": "CoCo都可",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "省錢福利品：粉角奶茶 39 元、茉莉綠茶 29 元",
+"price": 29,
+"how": "門市臨櫃或官方 LINE 訂購",
+"ends": "2026-10-31",
+"note": "商場門市及部分門市不參加",
+"src": "https://supertaste.tvbs.com.tw/pack/362009",
+"mapq": "CoCo都可",
+"people": 1
+},
+{
+"id": "teatop-2nd-half",
+"brand": "TEATOP第一味",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "奶茶第二杯半價",
+"price": 90,
+"orig": 120,
+"people": 2,
+"how": "出示食尚玩家 APP 的優惠卡",
+"ends": "2026-10-30",
+"note": "北部價；中南部 2 杯 82 元",
+"src": "https://supertaste.tvbs.com.tw/pack/361756",
+"mapq": "TEATOP第一味"
+},
+{
+"id": "cp-satay179",
+"brand": "繼光香香雞",
+"cat": "雞排鹹酥雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "沙嗲香脆組：沙嗲無骨腿丁＋印尼蝦餅",
+"price": 179,
+"orig": 190,
+"how": "門市點餐",
+"ends": "2026-10-31",
+"note": "10 月優惠，結束日請向門市確認",
+"src": "https://www.nownews.com/news/6879357",
+"mapq": "繼光香香雞",
+"people": 1
+},
+{
+"id": "cp-satay199",
+"brand": "繼光香香雞",
+"cat": "雞排鹹酥雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "沙嗲鮮香組：沙嗲無骨腿丁＋九層塔花枝丸",
+"price": 199,
+"orig": 223,
+"how": "門市點餐",
+"ends": "2026-10-31",
+"note": "10 月優惠，結束日請向門市確認",
+"src": "https://www.nownews.com/news/6879357",
+"mapq": "繼光香香雞",
+"people": 1
 }
 ]
 }
