@@ -1,5 +1,5 @@
 {
-"updatedAt": "2026/10/21 11:23",
+"updatedAt": "2026/10/22 00:03",
 "deals": [
 {
 "brand": "漢堡王",
@@ -2448,6 +2448,407 @@
 "src": "https://www.money101.com.tw/blog/%E8%B6%85%E5%95%86-%E9%AE%AE%E9%A3%9F-%E7%89%B9%E5%83%B9%E6%99%82%E6%AE%B5",
 "mapq": "全家",
 "icon": "bento"
+},
+{
+"id": "bd-mcd",
+"brand": "麥當勞",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "生日券（隨機一張）：大麥克或勁辣雞腿堡＋中杯飲料",
+"price": 79,
+"how": "麥當勞 APP 會員，生日當月自動發券",
+"note": "隨機發三種之一：主餐＋中飲 79 元、主餐＋小薯 85 元、10 塊雞塊＋中飲 110 元；每張限用一次",
+"src": "https://supertaste.tvbs.com.tw/food/361502",
+"mapq": "麥當勞",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-mos",
+"brand": "摩斯漢堡",
+"cat": "漢堡速食",
+"meals": [
+"早餐",
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "壽星券組：冰紅茶（L）買一送一、早餐套餐 99 元、咖啡 6 折、燒肉珍珠堡套餐 135 元",
+"gift": "4 張壽星券",
+"pct": 0.4,
+"how": "摩斯 APP 新會員，生日前 3 天註冊，生日前一天發券",
+"note": "生日當天起 60 天內可用；pct 以咖啡 6 折估算",
+"src": "https://info.talk.tw/2026birthday/",
+"mapq": "摩斯漢堡",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-kfc",
+"brand": "肯德基",
+"cat": "炸雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "PK 雙饗卡生日券，單筆滿 79 元折抵",
+"gift": "生日折價券",
+"how": "PK 雙饗卡 APP 會員，生日前 7 天註冊，生日前一週發到優惠券匣",
+"note": "金額以券面為準（報導多為 50 元）；生日起約 60 天內有效；部分門市不適用",
+"src": "https://www.pkcard.com.tw/gift.php",
+"mapq": "肯德基",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-ph",
+"brand": "必勝客",
+"cat": "披薩",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "PK 雙饗卡生日券，單筆滿 79 元折抵",
+"gift": "生日折價券",
+"how": "PK 雙饗卡 APP 會員，生日前 7 天註冊，生日前一週發到優惠券匣",
+"note": "金額以券面為準（報導多為 50 元）；和肯德基生日券各一張",
+"src": "https://www.pkcard.com.tw/gift.php",
+"mapq": "必勝客",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-dicos",
+"brand": "德克士",
+"cat": "炸雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "5 塊炸雞桶 5 折券 2 張（原味、辣味各一）",
+"price": 188,
+"orig": 375,
+"people": 2,
+"how": "德克士 LINE 會員綁定並填生日，生日當月發券",
+"note": "單筆限用一張，不能和其他優惠併用",
+"src": "https://supertaste.tvbs.com.tw/food/361502",
+"mapq": "德克士",
+"bday": true
+},
+{
+"id": "bd-ss-chicken",
+"brand": "三商炸雞",
+"cat": "炸雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "買灑粉棒腿，送原味胡椒咔啦雞柳條",
+"gift": "買一送一",
+"pct": 0.5,
+"how": "三商i美食 APP 會員生日券",
+"note": "品項依券面；生日當月到隔月月底",
+"src": "https://supertaste.tvbs.com.tw/food/361502",
+"mapq": "三商炸雞",
+"icon": "drumstick",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-sq",
+"brand": "三商巧福",
+"cat": "麵",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "壽星券：牛肉麵買一送一或買套餐送主餐（依券面）",
+"gift": "買一送一",
+"pct": 0.5,
+"how": "三商i美食 APP 會員，生日月自動發券",
+"note": "實際品項依券面；生日月到隔月月底",
+"src": "https://info.talk.tw/2026birthday/",
+"mapq": "三商巧福",
+"icon": "noodle",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-sw",
+"brand": "三商鮮五丼",
+"cat": "丼飯",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "壽星券：丼飯買一送一或買套餐送主餐（依券面）",
+"gift": "買一送一",
+"pct": 0.5,
+"how": "三商i美食 APP 會員，生日月自動發券",
+"note": "實際品項依券面；生日月到隔月月底",
+"src": "https://info.talk.tw/2026birthday/",
+"mapq": "三商鮮五丼",
+"icon": "donburi",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-pcl",
+"brand": "品川蘭",
+"cat": "麵",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "壽星券：牛肉麵買一送一或買套餐送主餐（依券面）",
+"gift": "買一送一",
+"pct": 0.5,
+"how": "三商i美食 APP 會員，生日月自動發券",
+"note": "實際品項依券面；生日月到隔月月底",
+"src": "https://info.talk.tw/2026birthday/",
+"mapq": "品川蘭",
+"icon": "noodle",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-napoli",
+"brand": "拿坡里",
+"cat": "甜點",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "外帶重乳酪蛋糕壽星價",
+"price": 250,
+"how": "三商i美食 APP 會員生日券，外帶",
+"note": "生日月到隔月月底（依券面）",
+"src": "https://supertaste.tvbs.com.tw/food/361502",
+"mapq": "拿坡里",
+"icon": "cake",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-popeyes",
+"brand": "Popeyes",
+"cat": "炸雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "私房秘製比司吉 1 份",
+"gift": "免費送",
+"pct": 1,
+"how": "Popeyes LINE 官方帳號會員綁定，生日當月發券",
+"src": "https://supertaste.tvbs.com.tw/food/361502",
+"mapq": "Popeyes",
+"icon": "bread",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-bdy",
+"brand": "薄多義",
+"cat": "麵",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "幾歲送幾隻雞翅",
+"gift": "幾歲送幾隻",
+"people": 4,
+"how": "當月壽星本人到店出示證件，提前 3 天電話或門市預約",
+"note": "4 人以上或每人低消 500 元（含服務費）；限內用、每桌一次、每日限量",
+"src": "https://info.talk.tw/2026birthday/",
+"mapq": "薄多義",
+"icon": "drumstick",
+"bday": true
+},
+{
+"id": "bd-sushi",
+"brand": "爭鮮",
+"cat": "壽司",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "鮭魚三味 1 份",
+"gift": "免費送",
+"pct": 1,
+"how": "爭鮮 APP 會員，不限金額",
+"note": "內用、外帶可用，外送平台不適用；爭鮮 gogo 送多多君、定食8 送黃金脆薯",
+"src": "https://info.talk.tw/2026birthday/",
+"mapq": "爭鮮",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-zhujian",
+"brand": "築間幸福鍋物",
+"cat": "火鍋",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "壽星送大份肉類或海鮮（5 選 1）",
+"gift": "免費送",
+"how": "築間會員，生日當月發兌換券",
+"note": "每套餐限兌換一次",
+"src": "https://info.talk.tw/2026birthday/",
+"mapq": "築間幸福鍋物",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-katsu",
+"brand": "京都勝牛",
+"cat": "丼飯",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "壽星全單 8 折，2 人點 2 客主餐再送四格甜點",
+"gift": "全單 8 折",
+"pct": 0.2,
+"how": "京都勝牛 APP 生日券（新會員約 2 個工作天發送）",
+"note": "生日當月；同行好友同享",
+"src": "https://info.talk.tw/2026birthday/",
+"mapq": "京都勝牛",
+"icon": "bento",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-xct",
+"brand": "鮮茶道",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "琥珀紅茶 1 杯",
+"gift": "免費送",
+"pct": 1,
+"how": "鮮茶道 LINE 會員，到店出示生日券",
+"note": "生日當月，不限消費",
+"src": "https://supertaste.tvbs.com.tw/food/361502",
+"mapq": "鮮茶道",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-ugtea",
+"brand": "UG TEA",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "桂花輕烏龍純茶或奶茶（L）第二杯 0 元",
+"gift": "第 2 杯 0 元",
+"pct": 0.5,
+"people": 2,
+"how": "UG TEA LINE 會員生日券",
+"note": "適用品項依券面，不同月份可能不同",
+"src": "https://supertaste.tvbs.com.tw/food/361502",
+"mapq": "UG TEA",
+"bday": true
+},
+{
+"id": "bd-31",
+"brand": "31冰淇淋",
+"cat": "冰品",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "標準單球冰淇淋，口味任選",
+"gift": "免費送",
+"pct": 1,
+"how": "31冰淇淋 APP 會員，出示含照片證件",
+"note": "生日當月",
+"src": "https://supertaste.tvbs.com.tw/food/361502",
+"mapq": "31冰淇淋",
+"icon": "icecup",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-beardpapa",
+"brand": "beard papa's",
+"cat": "甜點",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "泡芙生日禮：新手買 2 送 1、專家買 1 送 1、大師免費 1 顆",
+"gift": "買 2 送 1 起",
+"pct": 0.33,
+"how": "Ocard 會員，生日當月發券",
+"note": "等級依年度消費；一年限領一次",
+"src": "https://supertaste.tvbs.com.tw/food/361502",
+"mapq": "beard papa's",
+"icon": "cake",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-djg",
+"brand": "蛋金固烘焙坊",
+"cat": "甜點",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "古早味現烤蛋糕整條 1 份",
+"gift": "免費送",
+"pct": 1,
+"how": "Ocard 會員，生日當月發券",
+"note": "無低消；價值約 200 元",
+"src": "https://supertaste.tvbs.com.tw/food/361502",
+"mapq": "蛋金固",
+"icon": "cake",
+"bday": true,
+"people": 1
+},
+{
+"id": "bd-hrz",
+"brand": "洪瑞珍",
+"cat": "早餐店",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "三明治 1 份",
+"gift": "免費送",
+"pct": 1,
+"how": "Ocard 會員，生日當月發券",
+"note": "限指定門市（微風南京、南港車站、南港 LaLaport、桃園台茂），請先確認",
+"src": "https://supertaste.tvbs.com.tw/food/361502",
+"mapq": "洪瑞珍",
+"icon": "toast",
+"bday": true,
+"people": 1
 }
 ]
 }

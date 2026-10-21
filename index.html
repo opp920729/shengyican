@@ -105,6 +105,13 @@ details.coupon[open]{box-shadow:0 0 0 2px var(--ink)}
 .tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:2px}
 .tag{font-size:12px;padding:2px 7px;border-radius:4px;background:var(--chip);color:var(--muted)}
 .tag.hot{background:var(--red);color:#fff}
+.tag.bd{background:#fde4ec;color:#a3164a}
+.cats button.bd{background:#fde4ec;color:#a3164a}
+.cats button.bd[aria-pressed="true"]{background:#c2185b;color:#fff}
+.bday{margin-top:8px;background:var(--card);border-radius:12px;padding:12px 14px;display:grid;gap:6px}
+.bday .bm{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}
+.bday select{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:5px 8px;font-size:15px}
+.bday p{margin:0;font-size:13px;color:var(--muted);line-height:1.5}
 .tag.buy{background:transparent;box-shadow:inset 0 0 0 1px var(--green);color:var(--green)}
 
 .stub{position:relative;border-left:2px dashed var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:10px 6px;text-align:center}
@@ -186,6 +193,7 @@ details[open] .stub .more{visibility:hidden}
     </div>
   </div>
   <div class="cats" id="cats" role="group" aria-label="種類"></div>
+  <div class="bday" id="bday" hidden></div>
   <div class="sort" role="group" aria-label="排序">
     <button id="s-cp" data-sort="cp">最划算</button>
     <button id="s-pp" data-sort="pp">最便宜</button>
@@ -235,6 +243,8 @@ let region = store("sy.region") || "";
 let budget = Number(store("sy.budget")) || 0;
 let ppl = Math.min(20, Math.max(1, Number(store("sy.ppl")) || 1));
 let cat = store("sy.cat") || "";
+let bmonth = Number(store("sy.bmonth")) || 0;
+const isBdayMonth = () => bmonth === NOW.getMonth() + 1;
 
 function pickMeal(){
   const h = NOW.getHours() + NOW.getMinutes() / 60;
@@ -266,7 +276,7 @@ function daysLeft(d){ if (!d.ends) return null; return Math.floor((new Date(d.en
 const active = d => !d.ends || d.ends >= todayStr;
 const inRegion = d => !Array.isArray(d.regions) || !d.regions.length || (region && d.regions.includes(region));
 const mapUrl = q => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q + (region ? " " + region : " 附近"));
-const MARKS = {"麥當勞":["麥","#c8102e"],"肯德基":["肯","#9e1b20"],"摩斯漢堡":["摩","#00703c"],"漢堡王":["王","#d35400"],"必勝客":["必","#b5121b"],"拿坡里":["拿","#1f7a3a"],"達美樂":["達","#0b5ea8"],"三商炸雞":["炸","#e0611a"],"三商巧福":["巧","#9b2d20"],"三商鮮五丼":["丼","#8a5a00"],"頂呱呱":["呱","#e4002b"],"21風味館":["21","#5b3a29"],"炸雞大獅":["獅","#b03a2e"],"全家":["全","#00843d"],"7-11":["7","#ee7623"],"Q Burger":["Q","#e60012"],"麥味登":["登","#e85d04"],"早安美芝城":["芝","#d1495b"],"晨間廚房":["晨","#e07b00"],"品川蘭":["蘭","#6b4226"],"金子半之助":["金","#2c2c2c"],"薄多義":["薄","#7a1f2b"],"Uber Eats":["U","#06a35a"],"foodpanda":["fp","#d70f64"],"壽司郎":["郎","#c8102e"],"藏壽司":["藏","#1b3c8a"],"這一小鍋":["鍋","#b03a2e"],"泰滾mini":["泰","#e67e22"],"賴山嶼麻辣燙":["賴","#922b21"],"Mister Donut":["MD","#e08e0b"],"Krispy Kreme":["KK","#00704a"],"哈根達斯":["哈","#5a2a82"],"DQ":["DQ","#d71920"],"CoCo都可":["Co","#e65a1e"],"50嵐":["50","#1f6fb2"],"TEA TOP 第一味":["一","#2e7d32"],"成真咖啡":["真","#4e342e"],"早到晚到":["早","#00897b"],"茶詠春":["詠","#33691e"],"TEATOP第一味":["一","#2e7d32"],"繼光香香雞":["繼","#c62828"],"萊爾富":["萊","#d32f2f"],"OKmart":["OK","#e53935"]};
+const MARKS = {"麥當勞":["麥","#c8102e"],"肯德基":["肯","#9e1b20"],"摩斯漢堡":["摩","#00703c"],"漢堡王":["王","#d35400"],"必勝客":["必","#b5121b"],"拿坡里":["拿","#1f7a3a"],"達美樂":["達","#0b5ea8"],"三商炸雞":["炸","#e0611a"],"三商巧福":["巧","#9b2d20"],"三商鮮五丼":["丼","#8a5a00"],"頂呱呱":["呱","#e4002b"],"21風味館":["21","#5b3a29"],"炸雞大獅":["獅","#b03a2e"],"全家":["全","#00843d"],"7-11":["7","#ee7623"],"Q Burger":["Q","#e60012"],"麥味登":["登","#e85d04"],"早安美芝城":["芝","#d1495b"],"晨間廚房":["晨","#e07b00"],"品川蘭":["蘭","#6b4226"],"金子半之助":["金","#2c2c2c"],"薄多義":["薄","#7a1f2b"],"Uber Eats":["U","#06a35a"],"foodpanda":["fp","#d70f64"],"壽司郎":["郎","#c8102e"],"藏壽司":["藏","#1b3c8a"],"這一小鍋":["鍋","#b03a2e"],"泰滾mini":["泰","#e67e22"],"賴山嶼麻辣燙":["賴","#922b21"],"Mister Donut":["MD","#e08e0b"],"Krispy Kreme":["KK","#00704a"],"哈根達斯":["哈","#5a2a82"],"DQ":["DQ","#d71920"],"CoCo都可":["Co","#e65a1e"],"50嵐":["50","#1f6fb2"],"TEA TOP 第一味":["一","#2e7d32"],"成真咖啡":["真","#4e342e"],"早到晚到":["早","#00897b"],"茶詠春":["詠","#33691e"],"TEATOP第一味":["一","#2e7d32"],"繼光香香雞":["繼","#c62828"],"萊爾富":["萊","#d32f2f"],"OKmart":["OK","#e53935"],"德克士":["德","#c0392b"],"Popeyes":["P","#e85d04"],"爭鮮":["爭","#c62828"],"築間幸福鍋物":["築","#6d4c41"],"京都勝牛":["勝","#3e2723"],"鮮茶道":["鮮","#2e7d32"],"UG TEA":["UG","#1565c0"],"31冰淇淋":["31","#ec407a"],"beard papa's":["BP","#f9a825"],"蛋金固烘焙坊":["蛋","#e65100"],"洪瑞珍":["洪","#ad1457"]};
 const MARK_COLORS = ["#c0392b","#d35400","#16a085","#2471a3","#7d3c98","#b9770e","#1e8449","#a93226","#2e4053","#ca6f1e"];
 function brandMark(b){
   if (MARKS[b]) return MARKS[b];
@@ -328,9 +338,10 @@ function foodIcon(d){
   return s;
 }
 function el(tag, cls, text){ const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
-function fmtEnd(d){ if (!d.ends) return "未公布，以官方為準"; const [, m, dd] = d.ends.split("-"); return Number(m) + " 月 " + Number(dd) + " 日"; }
+function fmtEnd(d){ if (!d.ends) return d.bday ? "生日月內，以券面效期為準" : "未公布，以官方為準"; const [, m, dd] = d.ends.split("-"); return Number(m) + " 月 " + Number(dd) + " 日"; }
 function howShort(d){
   if (d.buy) return (d.buyName || "線上") + " 買券";
+  if (d.bday){ const h = d.how || ""; return /預約/.test(h) ? "先預約" : /LINE/.test(h) ? "LINE 會員" : /Ocard/.test(h) ? "Ocard 會員" : /APP/.test(h) ? "APP 會員" : "會員券"; }
   const h = d.how || "";
   if (/APP|app/.test(h) && /領/.test(h)) return "APP 領券";
   if (/座位點餐/.test(h)) return "掃碼點餐";
@@ -339,26 +350,42 @@ function howShort(d){
   return "到店點";
 }
 
+function renderBday(show){
+  const box = document.getElementById("bday"); box.hidden = !show; if (!show) return;
+  box.textContent = "";
+  const lab = el("label", "bm"); lab.appendChild(el("span", null, "我的生日月份"));
+  const sel = el("select"); sel.setAttribute("aria-label", "生日月份");
+  const o0 = el("option", null, "未設定"); o0.value = "0"; sel.appendChild(o0);
+  for (let m = 1; m <= 12; m++){ const o = el("option", null, m + " 月"); o.value = String(m); sel.appendChild(o); }
+  sel.value = String(bmonth);
+  sel.onchange = () => { bmonth = Number(sel.value) || 0; store("sy.bmonth", String(bmonth || "")); render(); };
+  lab.appendChild(sel); box.appendChild(lab);
+  box.appendChild(el("p", null, isBdayMonth() ? "這個月是你的生日月，壽星優惠也會排進早餐、午餐、晚餐、宵夜的清單。"
+    : "設定後，生日當月壽星優惠會自動排進各餐別。大多要先加入品牌 APP 或 LINE 會員，生日前就要註冊好。"));
+}
 function render(){
   document.querySelectorAll(".meals button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.meal === meal)));
   document.querySelectorAll(".sort button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.sort === sort)));
-  const base = DEALS.filter(d => active(d) && inRegion(d) && Array.isArray(d.meals) && d.meals.includes(meal));
+  const pool = DEALS.filter(d => active(d) && inRegion(d));
+  const bdays = pool.filter(d => d.bday);
+  const base = pool.filter(d => (!d.bday || isBdayMonth()) && Array.isArray(d.meals) && d.meals.includes(meal));
   const counts = {};
   base.forEach(d => counts[d.cat] = (counts[d.cat] || 0) + 1);
   const present = CAT_ORDER.filter(c => counts[c]).concat(Object.keys(counts).filter(c => c && !CAT_ORDER.includes(c)));
-  if (cat && !counts[cat]) cat = "";
+  if (cat === "生日" ? !bdays.length : (cat && !counts[cat])) cat = "";
 
   const cats = document.getElementById("cats"); cats.textContent = "";
-  [""].concat(present).forEach(c => {
-    const b = el("button"); b.type = "button"; b.id = "c-" + (c || "all");
+  [""].concat(bdays.length ? ["生日"] : [], present).forEach(c => {
+    const b = el("button", c === "生日" ? "bd" : null); b.type = "button"; b.id = "c-" + (c || "all");
     b.setAttribute("aria-pressed", String(c === cat));
     b.appendChild(document.createTextNode(c || "全部"));
-    b.appendChild(el("span", "n", String(c ? counts[c] : base.length)));
+    b.appendChild(el("span", "n", String(c === "生日" ? bdays.length : c ? counts[c] : base.length)));
     b.onclick = () => { cat = c; store("sy.cat", cat); render(); };
     cats.appendChild(b);
   });
 
-  let rows = base.filter(d => !cat || d.cat === cat);
+  renderBday(cat === "生日");
+  let rows = cat === "生日" ? bdays.slice() : base.filter(d => !cat || d.cat === cat);
   if (budget > 0) rows = rows.filter(d => { const pp = perPerson(d); return pp !== null && pp <= budget; });
   rows.forEach(d => d._s = score(d));
   if (sort === "cp") rows.sort((a, b) => b._s - a._s || (perPerson(a) ?? 1e9) - (perPerson(b) ?? 1e9));
@@ -395,7 +422,7 @@ function coupon(d){
     else if (r !== null) money.appendChild(el("span", "off", "省 " + Math.round(r * 100) + "%"));
   } else {
     money.appendChild(el("span", "gift", d.gift || "加碼優惠"));
-    const r = ratio(d); if (r !== null) money.appendChild(el("span", "off", "省 " + Math.round(r * 100) + "%"));
+    const r = ratio(d); if (r !== null && r < 1) money.appendChild(el("span", "off", "省 " + Math.round(r * 100) + "%"));
   }
   body.appendChild(money);
   if (pl && ppl > 1) body.appendChild(el("div", "each", ppl + " 人要買 " + pl.sets + " 份，共 $" + pl.total + "，每人約 $" + Math.round(pl.each)));
@@ -404,6 +431,7 @@ function coupon(d){
   const tags = el("div", "tags");
   const left = daysLeft(d);
   if (left !== null && left <= 2) tags.appendChild(el("span", "tag hot", left <= 0 ? "今天截止" : "剩 " + (left + 1) + " 天"));
+  if (d.bday) tags.appendChild(el("span", "tag bd", "壽星"));
   if (d.buy) tags.appendChild(el("span", "tag buy", "可線上買"));
   if (Array.isArray(d.regions) && d.regions.length) tags.appendChild(el("span", "tag", "限" + d.regions.join("、")));
   if (d.note && d.note.includes("確認")) tags.appendChild(el("span", "tag", "請先問門市"));
