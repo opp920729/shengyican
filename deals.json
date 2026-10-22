@@ -1,5 +1,5 @@
 {
-"updatedAt": "2026/10/22 00:03",
+"updatedAt": "2026/10/22 08:46",
 "deals": [
 {
 "brand": "漢堡王",
@@ -1067,24 +1067,6 @@
 "id": "momo-mcd-15712174"
 },
 {
-"brand": "麥當勞",
-"cat": "漢堡速食",
-"meals": [
-"早餐"
-],
-"title": "吉事蛋堡＋冰經典美式咖啡",
-"price": 55,
-"people": 1,
-"how": "momo 買即享券，到店出示條碼兌換",
-"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15712173",
-"buy": "https://s.momoshop.com.tw/s/MsEUL8uR",
-"buyName": "momo",
-"mapq": "麥當勞",
-"ends": "2026-10-21",
-"note": "10/21 00:00 開賣，限時一天",
-"id": "momo-mcd-15712173"
-},
-{
 "brand": "摩斯漢堡",
 "cat": "漢堡速食",
 "meals": [
@@ -1100,25 +1082,6 @@
 "buyName": "momo",
 "mapq": "摩斯漢堡",
 "id": "momo-mos-15039742"
-},
-{
-"brand": "摩斯漢堡",
-"cat": "漢堡速食",
-"meals": [
-"早餐",
-"午餐"
-],
-"title": "蛋堡三選一＋大杯冰紅茶（快閃價）",
-"price": 63,
-"people": 1,
-"how": "momo 買即享券，到店出示條碼兌換",
-"src": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15760878",
-"buy": "https://s.momoshop.com.tw/s/DKVSYLhC",
-"buyName": "momo",
-"mapq": "摩斯漢堡",
-"ends": "2026-10-21",
-"note": "10/21 00:00 開賣，限時快閃",
-"id": "momo-mos-15760878"
 },
 {
 "brand": "摩斯漢堡",
@@ -2849,6 +2812,116 @@
 "icon": "toast",
 "bday": true,
 "people": 1
+},
+{
+"id": "mcd-halloween-set",
+"brand": "麥當勞",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "萬聖節黑特餐：松露黑堡＋海苔搖搖薯條＋黑森林冰炫風＋38 元飲品",
+"price": 270,
+"how": "門市或 APP 點餐",
+"ends": "2026-11-24",
+"note": "270 元起；冰炫風換巧克力三角派為 250 元起",
+"src": "https://supertaste.tvbs.com.tw/pack/362071",
+"mapq": "麥當勞",
+"people": 1
+},
+{
+"id": "mcd-200fries",
+"brand": "麥當勞",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "中薯：單筆滿 200 元免費送",
+"gift": "送中薯",
+"how": "門市點餐",
+"note": "期限未公布，請向門市確認",
+"src": "https://supertaste.tvbs.com.tw/pack/362071",
+"mapq": "麥當勞",
+"icon": "fries",
+"people": 1
+},
+{
+"id": "kfc-darktart-duo",
+"brand": "肯德基",
+"cat": "甜點",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "蛋撻雙口味禮盒：原味 3 顆＋闇黑之吻蛋撻 3 顆",
+"price": 266,
+"people": 3,
+"how": "門市點餐",
+"ends": "2026-11-02",
+"src": "https://supertaste.tvbs.com.tw/pack/362071",
+"mapq": "肯德基"
+},
+{
+"id": "dicos-face-qq",
+"brand": "德克士",
+"cat": "炸雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "黑金系列任一品項，對店員扮鬼臉送紫金 QQ 球",
+"gift": "送 QQ 球",
+"how": "門市點黑金系列，現場扮鬼臉",
+"ends": "2026-11-02",
+"note": "黑金脆皮手槍腿 165 元、黑金咔滋雞腿堡 149 元；球場門市不適用",
+"src": "https://supertaste.tvbs.com.tw/pack/362071",
+"mapq": "德克士",
+"icon": "drumstick",
+"people": 1
+},
+{
+"id": "ph-taro-volcano",
+"brand": "必勝客",
+"cat": "披薩",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "芋霸不能火山比薩（甜比薩）",
+"price": 249,
+"orig": 299,
+"how": "門市、官網或 PK 雙饗卡 APP",
+"ends": "2026-11-02",
+"note": "數量有限",
+"src": "https://woman.udn.com/woman/story/123162/9813234",
+"mapq": "必勝客",
+"people": 1
+},
+{
+"id": "mos-konjac2",
+"brand": "摩斯漢堡",
+"cat": "飲料",
+"meals": [
+"早餐",
+"午餐",
+"晚餐"
+],
+"title": "蒟蒻飲品任選 2 杯",
+"price": 52,
+"people": 2,
+"how": "門市點餐",
+"ends": "2026-10-31",
+"note": "指定商品送萬聖節貼紙，每店限 100 份",
+"src": "https://woman.udn.com/woman/story/123162/9813234",
+"mapq": "摩斯漢堡",
+"icon": "tea"
 }
 ]
 }
