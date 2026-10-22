@@ -51,7 +51,17 @@ button{cursor:pointer}
 .meals small{font-size:11px;color:var(--muted)}
 .meals button[aria-pressed="true"]{background:var(--chip-on);color:var(--chip-on-ink)}
 .meals button[aria-pressed="true"] small{color:inherit;opacity:.7}
+.meals button.dim[aria-pressed="true"]{background:var(--chip);color:var(--ink)}
+.meals button.dim[aria-pressed="true"] small{color:var(--muted);opacity:1}
 
+/* search */
+.search{position:relative;margin-top:12px;display:flex;align-items:center}
+.search svg{position:absolute;left:13px;width:17px;height:17px;color:var(--muted);pointer-events:none}
+.search input{width:100%;height:42px;border-radius:12px;border:1px solid var(--line);background:var(--card);padding:0 40px 0 38px;font-size:16px}
+.search input::-webkit-search-cancel-button{-webkit-appearance:none}
+.search input:focus{outline:2px solid var(--ink);outline-offset:-1px}
+.search button{position:absolute;right:6px;width:30px;height:30px;border:0;border-radius:50%;background:var(--chip);color:var(--muted);font-size:18px;line-height:1}
+.qnote{font-size:13px;color:var(--muted);padding-top:6px}
 /* filters */
 .filters{display:flex;gap:8px;flex-wrap:wrap;padding-block:12px 4px}
 .ctl{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 12px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:14px;white-space:nowrap}
@@ -173,6 +183,11 @@ details[open] .stub .more{visibility:hidden}
 </header>
 
 <main class="wrap gut">
+  <div class="search" role="search">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+    <input id="q" type="search" placeholder="搜尋品牌或品項，例如 麥當勞、蛋撻" autocomplete="off" enterkeyhint="search" aria-label="搜尋優惠">
+    <button type="button" id="q-clear" aria-label="清除搜尋" hidden>×</button>
+  </div>
   <div class="filters">
     <label class="ctl" for="region" aria-label="地區"><svg class="pin" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 14.5s4.5-4.2 4.5-8a4.5 4.5 0 1 0-9 0c0 3.8 4.5 8 4.5 8Z"/><circle cx="8" cy="6.5" r="1.6"/></svg>
       <select id="region">
@@ -194,6 +209,7 @@ details[open] .stub .more{visibility:hidden}
   </div>
   <div class="cats" id="cats" role="group" aria-label="種類"></div>
   <div class="bday" id="bday" hidden></div>
+  <div class="qnote" id="qnote" hidden></div>
   <div class="sort" role="group" aria-label="排序">
     <button id="s-cp" data-sort="cp">最划算</button>
     <button id="s-pp" data-sort="pp">最便宜</button>
@@ -244,6 +260,11 @@ let budget = Number(store("sy.budget")) || 0;
 let ppl = Math.min(20, Math.max(1, Number(store("sy.ppl")) || 1));
 let cat = store("sy.cat") || "";
 let bmonth = Number(store("sy.bmonth")) || 0;
+let q = "";
+const ALIAS = [["麥當勞","麥當當 麥噹噹 麥記 mcdonald mcd 金拱門"],["肯德基","kfc 肯德雞"],["摩斯漢堡","摩斯 mos"],["漢堡王","bk burger king"],["必勝客","pizza hut pizzahut"],["達美樂","domino dominos"],["7-11","711 7-eleven 小七 統一超商 seven"],["全家","familymart 全家便利商店"],["萊爾富","hilife"],["OKmart","ok超商 ok便利"],["哈根達斯","haagen-dazs haagen dazs"],["Uber Eats","ubereats uber 優食"],["foodpanda","熊貓 food panda"],["Mister Donut","mister donut 甜甜圈"],["三商炸雞","三商"],["三商巧福","三商"],["三商鮮五丼","三商"],["CoCo都可","coco 都可"]];
+function norm(t){ return String(t || "").toLowerCase().replace(/[\s　·・]/g, "").replace(/臺/g, "台"); }
+function hay(d){ let h = [d.brand, d.title, d.cat, d.code, d.gift].join(" "); for (const [b, a] of ALIAS) if (d.brand === b) h += " " + a; return norm(h + " " + h.replace(/\s/g, "")); }
+function matchQ(d){ const words = String(q).trim().split(/\s+/).map(norm).filter(Boolean); if (!words.length) return true; const h = hay(d); return words.every(w => h.includes(w)); }
 const isBdayMonth = () => bmonth === NOW.getMonth() + 1;
 
 function pickMeal(){
@@ -368,14 +389,17 @@ function render(){
   document.querySelectorAll(".sort button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.sort === sort)));
   const pool = DEALS.filter(d => active(d) && inRegion(d));
   const bdays = pool.filter(d => d.bday);
-  const base = pool.filter(d => (!d.bday || isBdayMonth()) && Array.isArray(d.meals) && d.meals.includes(meal));
+  const searching = !!q.trim();
+  const base = searching ? pool.filter(matchQ)
+    : pool.filter(d => (!d.bday || isBdayMonth()) && Array.isArray(d.meals) && d.meals.includes(meal));
   const counts = {};
   base.forEach(d => counts[d.cat] = (counts[d.cat] || 0) + 1);
   const present = CAT_ORDER.filter(c => counts[c]).concat(Object.keys(counts).filter(c => c && !CAT_ORDER.includes(c)));
-  if (cat === "生日" ? !bdays.length : (cat && !counts[cat])) cat = "";
+  if (cat === "生日" ? (!bdays.length || searching) : (cat && !counts[cat])) cat = "";
 
   const cats = document.getElementById("cats"); cats.textContent = "";
-  [""].concat(bdays.length ? ["生日"] : [], present).forEach(c => {
+  document.querySelectorAll(".meals button").forEach(b => b.classList.toggle("dim", searching));
+  [""].concat(bdays.length && !searching ? ["生日"] : [], present).forEach(c => {
     const b = el("button", c === "生日" ? "bd" : null); b.type = "button"; b.id = "c-" + (c || "all");
     b.setAttribute("aria-pressed", String(c === cat));
     b.appendChild(document.createTextNode(c || "全部"));
@@ -393,12 +417,14 @@ function render(){
   if (sort === "end") rows.sort((a, b) => (a.ends || "9999").localeCompare(b.ends || "9999"));
 
   document.getElementById("count").textContent = rows.length + " 個優惠";
+  const qn = document.getElementById("qnote"); qn.hidden = !searching;
+  if (searching) qn.textContent = "搜尋「" + q.trim() + "」：包含早餐、午餐、晚餐、宵夜全部時段";
   const list = document.getElementById("rows"); list.textContent = "";
   if (!DEALS.length) return;
   if (!rows.length){
     const li = el("li", "empty");
     li.appendChild(el("b", null, "沒有符合條件的優惠"));
-    li.appendChild(document.createTextNode(budget ? "試試調高預算，或換個種類。" : "換個餐別或種類看看，也可以直接找附近的店。"));
+    li.appendChild(document.createTextNode(searching ? "目前沒有「" + q.trim() + "」的優惠，換個關鍵字，或用下面的附近店家找找。" : budget ? "試試調高預算，或換個種類。" : "換個餐別或種類看看，也可以直接找附近的店。"));
     list.appendChild(li);
   }
   rows.forEach(d => list.appendChild(coupon(d)));
@@ -484,7 +510,11 @@ function copy(t){
 let tt;
 function toast(msg){ const t = document.getElementById("toast"); t.textContent = msg; t.hidden = false; clearTimeout(tt); tt = setTimeout(() => t.hidden = true, 2200); }
 
-document.querySelectorAll(".meals button").forEach(b => b.onclick = () => { meal = b.dataset.meal; render(); });
+document.querySelectorAll(".meals button").forEach(b => b.onclick = () => { meal = b.dataset.meal; if (q){ q = ""; qEl.value = ""; qClr.hidden = true; } render(); });
+const qEl = document.getElementById("q"), qClr = document.getElementById("q-clear");
+qEl.oninput = () => { q = qEl.value; qClr.hidden = !q; render(); };
+qEl.onkeydown = e => { if (e.key === "Enter") qEl.blur(); if (e.key === "Escape"){ qEl.value = ""; qEl.oninput(); } };
+qClr.onclick = () => { qEl.value = ""; qEl.oninput(); qEl.focus(); };
 document.querySelectorAll(".sort button").forEach(b => b.onclick = () => { sort = b.dataset.sort; store("sy.sort", sort); render(); });
 const regionEl = document.getElementById("region"); regionEl.value = region;
 regionEl.onchange = () => { region = regionEl.value; store("sy.region", region); render(); };
