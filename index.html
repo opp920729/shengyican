@@ -115,6 +115,23 @@ details.coupon[open]{box-shadow:0 0 0 2px var(--ink)}
 .tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:2px}
 .tag{font-size:12px;padding:2px 7px;border-radius:4px;background:var(--chip);color:var(--muted)}
 .tag.hot{background:var(--red);color:#fff}
+.tag.warn{background:#fff1dc;color:#9a4a00}
+details.coupon.reported{opacity:.5}
+.btn.rep{margin-left:auto}
+.rmv{border:0;background:none;padding:0 0 0 4px;font-size:12px;color:var(--red);text-decoration:underline;text-underline-offset:2px}
+.sheet{position:fixed;inset:0;z-index:50;display:flex;align-items:flex-end;justify-content:center}
+.sheet[hidden]{display:none}
+.sheet-bg{position:absolute;inset:0;background:rgba(10,14,20,.45)}
+.sheet-box{position:relative;width:100%;max-width:520px;max-height:80vh;overflow:auto;background:var(--card);border-radius:16px 16px 0 0;padding:18px 16px calc(16px + env(safe-area-inset-bottom,0px));display:grid;gap:12px}
+.sheet-box h3{margin:0;font-size:18px}
+.sh-sub{margin:0;color:var(--muted);font-size:14px}
+.sh-opts{display:grid;gap:8px}
+.sh-opt{display:grid;gap:2px;text-align:left;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:10px 12px}
+.sh-opt b{font-size:16px}.sh-opt span{font-size:13px;color:var(--muted)}
+.sh-opt:disabled{opacity:.5}
+.sh-foot{margin:0;font-size:12px;color:var(--faint)}
+.sh-list{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:14px}
+.sh-list span{display:block;font-size:12px;color:var(--muted)}
 .tag.bd{background:#fde4ec;color:#a3164a}
 .cats button.bd{background:#fde4ec;color:#a3164a}
 .cats button.bd[aria-pressed="true"]{background:#c2185b;color:#fff}
@@ -171,7 +188,7 @@ details[open] .stub .more{visibility:hidden}
   <div class="wrap gut">
     <div class="bar">
       <div class="brand"><span class="mark" aria-hidden="true">省</span>省一餐</div>
-      <div class="upd"><span id="today"></span><br><span id="updated">讀取中</span></div>
+      <div class="upd"><span id="today"></span><br><span id="updated">讀取中</span><button type="button" id="removed" class="rmv" hidden></button></div>
     </div>
     <nav class="meals" aria-label="餐別">
       <button id="m-早餐" data-meal="早餐"><b>早餐</b><small>5:00–10:30</small></button>
@@ -231,6 +248,7 @@ details[open] .stub .more{visibility:hidden}
 </main>
 <div class="wm" aria-hidden="true">省一餐</div>
 <div class="toast" id="toast" hidden></div>
+<div class="sheet" id="sheet" hidden><div class="sheet-bg" id="sheet-bg"></div><div class="sheet-box" role="dialog" aria-modal="true" aria-labelledby="sheet-t"><h3 id="sheet-t"></h3><div id="sheet-body"></div><button type="button" class="btn" id="sheet-close">關閉</button></div></div>
 
 <script>
 const NOW = new Date();
@@ -261,6 +279,9 @@ let ppl = Math.min(20, Math.max(1, Number(store("sy.ppl")) || 1));
 let cat = store("sy.cat") || "";
 let bmonth = Number(store("sy.bmonth")) || 0;
 let q = "";
+let RCOUNT = {}, REMOVED = [];
+let REPORTED = {}; try { REPORTED = JSON.parse(store("sy.reported") || "{}") || {}; } catch(e){}
+const isReported = d => !!REPORTED[d.id];
 const ALIAS = [["麥當勞","麥當當 麥噹噹 麥記 mcdonald mcd 金拱門"],["肯德基","kfc 肯德雞"],["摩斯漢堡","摩斯 mos"],["漢堡王","bk burger king"],["必勝客","pizza hut pizzahut"],["達美樂","domino dominos"],["7-11","711 7-eleven 小七 統一超商 seven"],["全家","familymart 全家便利商店"],["萊爾富","hilife"],["OKmart","ok超商 ok便利"],["哈根達斯","haagen-dazs haagen dazs"],["Uber Eats","ubereats uber 優食"],["foodpanda","熊貓 food panda"],["Mister Donut","mister donut 甜甜圈"],["三商炸雞","三商"],["三商巧福","三商"],["三商鮮五丼","三商"],["CoCo都可","coco 都可"]];
 function norm(t){ return String(t || "").toLowerCase().replace(/[\s　·・]/g, "").replace(/臺/g, "台"); }
 function hay(d){ let h = [d.brand, d.title, d.cat, d.code, d.gift].join(" "); for (const [b, a] of ALIAS) if (d.brand === b) h += " " + a; return norm(h + " " + h.replace(/\s/g, "")); }
@@ -294,7 +315,9 @@ function score(d){
   return s;
 }
 function daysLeft(d){ if (!d.ends) return null; return Math.floor((new Date(d.ends + "T23:59:59") - NOW) / 86400000); }
-const active = d => !d.ends || d.ends >= todayStr;
+const ageDays = t => t ? Math.floor((NOW - new Date(t + "T00:00:00")) / 86400000) : null;
+const active = d => d.ends ? d.ends >= todayStr : !(d.checked && ageDays(d.checked) > (d.bday ? 60 : 14));
+const mmdd = t => { const [, m, dd] = String(t).split("-"); return Number(m) + "/" + Number(dd); };
 const inRegion = d => !Array.isArray(d.regions) || !d.regions.length || (region && d.regions.includes(region));
 const mapUrl = q => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q + (region ? " " + region : " 附近"));
 const MARKS = {"麥當勞":["麥","#c8102e"],"肯德基":["肯","#9e1b20"],"摩斯漢堡":["摩","#00703c"],"漢堡王":["王","#d35400"],"必勝客":["必","#b5121b"],"拿坡里":["拿","#1f7a3a"],"達美樂":["達","#0b5ea8"],"三商炸雞":["炸","#e0611a"],"三商巧福":["巧","#9b2d20"],"三商鮮五丼":["丼","#8a5a00"],"頂呱呱":["呱","#e4002b"],"21風味館":["21","#5b3a29"],"炸雞大獅":["獅","#b03a2e"],"全家":["全","#00843d"],"7-11":["7","#ee7623"],"Q Burger":["Q","#e60012"],"麥味登":["登","#e85d04"],"早安美芝城":["芝","#d1495b"],"晨間廚房":["晨","#e07b00"],"品川蘭":["蘭","#6b4226"],"金子半之助":["金","#2c2c2c"],"薄多義":["薄","#7a1f2b"],"Uber Eats":["U","#06a35a"],"foodpanda":["fp","#d70f64"],"壽司郎":["郎","#c8102e"],"藏壽司":["藏","#1b3c8a"],"這一小鍋":["鍋","#b03a2e"],"泰滾mini":["泰","#e67e22"],"賴山嶼麻辣燙":["賴","#922b21"],"Mister Donut":["MD","#e08e0b"],"Krispy Kreme":["KK","#00704a"],"哈根達斯":["哈","#5a2a82"],"DQ":["DQ","#d71920"],"CoCo都可":["Co","#e65a1e"],"50嵐":["50","#1f6fb2"],"TEA TOP 第一味":["一","#2e7d32"],"成真咖啡":["真","#4e342e"],"早到晚到":["早","#00897b"],"茶詠春":["詠","#33691e"],"TEATOP第一味":["一","#2e7d32"],"繼光香香雞":["繼","#c62828"],"萊爾富":["萊","#d32f2f"],"OKmart":["OK","#e53935"],"德克士":["德","#c0392b"],"Popeyes":["P","#e85d04"],"爭鮮":["爭","#c62828"],"築間幸福鍋物":["築","#6d4c41"],"京都勝牛":["勝","#3e2723"],"鮮茶道":["鮮","#2e7d32"],"UG TEA":["UG","#1565c0"],"31冰淇淋":["31","#ec407a"],"beard papa's":["BP","#f9a825"],"蛋金固烘焙坊":["蛋","#e65100"],"洪瑞珍":["洪","#ad1457"]};
@@ -359,7 +382,7 @@ function foodIcon(d){
   return s;
 }
 function el(tag, cls, text){ const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
-function fmtEnd(d){ if (!d.ends) return d.bday ? "生日月內，以券面效期為準" : "未公布，以官方為準"; const [, m, dd] = d.ends.split("-"); return Number(m) + " 月 " + Number(dd) + " 日"; }
+function fmtEnd(d){ if (!d.ends) return (d.bday ? "生日月內，以券面效期為準" : "未公布，以官方為準") + (d.checked ? "（" + mmdd(d.checked) + " 確認仍有效）" : ""); const [, m, dd] = d.ends.split("-"); return Number(m) + " 月 " + Number(dd) + " 日"; }
 function howShort(d){
   if (d.buy) return (d.buyName || "線上") + " 買券";
   if (d.bday){ const h = d.how || ""; return /預約/.test(h) ? "先預約" : /LINE/.test(h) ? "LINE 會員" : /Ocard/.test(h) ? "Ocard 會員" : /APP/.test(h) ? "APP 會員" : "會員券"; }
@@ -371,6 +394,35 @@ function howShort(d){
   return "到店點";
 }
 
+function openSheet(title, nodes){
+  const sh = document.getElementById("sheet"); document.getElementById("sheet-t").textContent = title;
+  const b = document.getElementById("sheet-body"); b.textContent = ""; nodes.forEach(n => b.appendChild(n));
+  sh.hidden = false; document.getElementById("sheet-close").focus();
+}
+function closeSheet(){ document.getElementById("sheet").hidden = true; }
+function reportSheet(d){
+  const head = el("p", "sh-sub", d.brand + "｜" + d.title);
+  const opts = el("div", "sh-opts");
+  [["已結束", "店員說沒有這個優惠了"], ["價格不對", "優惠還在，但價格或內容不一樣"], ["這間門市沒有", "只有我去的這間不適用"]].forEach(([r, sub]) => {
+    const b = el("button", "sh-opt"); b.type = "button"; b.appendChild(el("b", null, r)); b.appendChild(el("span", null, sub));
+    b.onclick = () => sendReport(d, r, b); opts.appendChild(b);
+  });
+  openSheet("這個優惠怎麼了？", [head, opts, el("p", "sh-foot", "回報不會直接下架。明天早上更新時會先查證，確認結束才拿掉。")]);
+}
+async function sendReport(d, reason, btn){
+  btn.disabled = true;
+  try {
+    const r = await fetch("api/report", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: d.id, reason }) });
+    if (!r.ok && r.status !== 429) throw new Error(r.status);
+    REPORTED[d.id] = todayStr; store("sy.reported", JSON.stringify(REPORTED));
+    closeSheet(); toast(r.status === 429 ? "今天回報太多次了，明天再試" : "謝謝，明早更新時會確認"); render();
+  } catch(e){ btn.disabled = false; toast("回報沒送出，稍後再試一次"); }
+}
+function showRemoved(){
+  const ul = el("ul", "sh-list");
+  REMOVED.forEach(x => { const li = el("li"); li.appendChild(el("b", null, x.brand)); li.appendChild(document.createTextNode(" " + x.title)); if (x.why) li.appendChild(el("span", null, x.why)); ul.appendChild(li); });
+  openSheet("這次更新下架了 " + REMOVED.length + " 筆", [ul, el("p", "sh-foot", "過期、已結束或查不到最新消息的優惠會自動拿掉。")]);
+}
 function renderBday(show){
   const box = document.getElementById("bday"); box.hidden = !show; if (!show) return;
   box.textContent = "";
@@ -415,6 +467,7 @@ function render(){
   if (sort === "cp") rows.sort((a, b) => b._s - a._s || (perPerson(a) ?? 1e9) - (perPerson(b) ?? 1e9));
   if (sort === "pp") rows.sort((a, b) => (perPerson(a) ?? 1e9) - (perPerson(b) ?? 1e9));
   if (sort === "end") rows.sort((a, b) => (a.ends || "9999").localeCompare(b.ends || "9999"));
+  rows.sort((a, b) => isReported(a) - isReported(b));
 
   document.getElementById("count").textContent = rows.length + " 個優惠";
   const qn = document.getElementById("qnote"); qn.hidden = !searching;
@@ -432,7 +485,7 @@ function render(){
 }
 
 function coupon(d){
-  const li = el("li"); const det = el("details", "coupon"); const sum = el("summary");
+  const li = el("li"); const det = el("details", "coupon" + (isReported(d) ? " reported" : "")); const sum = el("summary");
   const body = el("div", "body");
   const who = el("div", "who"); const [lt, lc] = brandMark(d.brand); const lg = el("span", "logo" + (lt.length > 1 ? " s" : ""), lt); lg.style.background = lc; lg.setAttribute("aria-hidden", "true"); who.appendChild(lg);
   const nm = el("div", "nm"); nm.appendChild(el("b", null, d.brand)); nm.appendChild(el("span", null, d.cat)); who.appendChild(nm); who.appendChild(foodIcon(d)); body.appendChild(who);
@@ -457,6 +510,9 @@ function coupon(d){
   const tags = el("div", "tags");
   const left = daysLeft(d);
   if (left !== null && left <= 2) tags.appendChild(el("span", "tag hot", left <= 0 ? "今天截止" : "剩 " + (left + 1) + " 天"));
+  if (isReported(d)) tags.appendChild(el("span", "tag", "你已回報"));
+  else if (RCOUNT[d.id]) tags.appendChild(el("span", "tag warn", RCOUNT[d.id] + " 人回報可能已結束"));
+  else if (!d.ends && !d.bday && d.checked && ageDays(d.checked) > 7) tags.appendChild(el("span", "tag warn", "可能已結束"));
   if (d.bday) tags.appendChild(el("span", "tag bd", "壽星"));
   if (d.buy) tags.appendChild(el("span", "tag buy", "可線上買"));
   if (Array.isArray(d.regions) && d.regions.length) tags.appendChild(el("span", "tag", "限" + d.regions.join("、")));
@@ -489,6 +545,7 @@ function coupon(d){
   if (d.buy){ const a = el("a", "btn buy"); a.href = d.buy; a.target = "_blank"; a.rel = "noopener sponsored"; a.innerHTML = ICON.bag; a.appendChild(document.createTextNode((d.buyName || "線上") + " 購買")); acts.appendChild(a); }
   if (d.code){ const c = el("button", "btn"); c.type = "button"; c.innerHTML = ICON.copy; c.appendChild(document.createTextNode("複製代碼")); c.onclick = () => copy(d.code); acts.appendChild(c); }
   if (d.src && d.src !== d.buy){ const s = el("a", "btn src", "資料來源"); s.href = d.src; s.target = "_blank"; s.rel = "noopener"; acts.appendChild(s); }
+  if (!isReported(d)){ const r = el("button", "btn src rep", "這個優惠沒了？回報"); r.type = "button"; r.onclick = () => reportSheet(d); acts.appendChild(r); }
   box.appendChild(acts);
   det.appendChild(box);
   li.appendChild(det);
@@ -511,6 +568,9 @@ let tt;
 function toast(msg){ const t = document.getElementById("toast"); t.textContent = msg; t.hidden = false; clearTimeout(tt); tt = setTimeout(() => t.hidden = true, 2200); }
 
 document.querySelectorAll(".meals button").forEach(b => b.onclick = () => { meal = b.dataset.meal; if (q){ q = ""; qEl.value = ""; qClr.hidden = true; } render(); });
+document.getElementById("sheet-close").onclick = closeSheet; document.getElementById("sheet-bg").onclick = closeSheet;
+addEventListener("keydown", e => { if (e.key === "Escape") closeSheet(); });
+document.getElementById("removed").onclick = showRemoved;
 const qEl = document.getElementById("q"), qClr = document.getElementById("q-clear");
 qEl.oninput = () => { q = qEl.value; qClr.hidden = !q; render(); };
 qEl.onkeydown = e => { if (e.key === "Enter") qEl.blur(); if (e.key === "Escape"){ qEl.value = ""; qEl.oninput(); } };
@@ -535,6 +595,12 @@ render();
     const j = await r.json();
     DEALS = Array.isArray(j.deals) ? j.deals : [];
     up.textContent = j.updatedAt ? String(j.updatedAt).slice(5) + " 更新" : "";
+    REMOVED = Array.isArray(j.removed) ? j.removed : [];
+    const rb = document.getElementById("removed"); if (REMOVED.length){ rb.textContent = "· 下架 " + REMOVED.length + " 筆"; rb.hidden = false; }
+    fetch("api/reports", { cache: "no-store" }).then(x => x.ok ? x.json() : null).then(x => {
+      if (!x || !Array.isArray(x.reports)) return; const c = {};
+      x.reports.forEach(r => { const dd = DEALS.find(d => d.id === r.id); if (dd && dd.checked && r.ts < new Date(dd.checked + "T00:00:00+08:00").getTime()) return; if (r.reason === "已結束") c[r.id] = (c[r.id] || 0) + 1; }); RCOUNT = c; render();
+    }).catch(() => {});
     if (!DEALS.length){
       list.textContent = "";
       const li = el("li", "empty"); li.appendChild(el("b", null, "今天的優惠還沒整理好")); li.appendChild(document.createTextNode("每天早上會更新，晚點再來看。"));
