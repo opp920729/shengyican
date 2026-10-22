@@ -1,5 +1,5 @@
 {
-"updatedAt": "2026/10/22 11:34",
+"updatedAt": "2026/10/22 19:54",
 "deals": [
 {
 "brand": "漢堡王",
@@ -2030,7 +2030,8 @@
 "src": "https://www.marieclaire.com.tw/lifestyle/taste/96393",
 "mapq": "全家便利商店",
 "people": 1,
-"id": "fm-witchfinger"
+"id": "fm-witchfinger",
+"hot": true
 },
 {
 "brand": "DQ",
@@ -2162,7 +2163,8 @@
 "note": "限時 6 折，628 元為折後價",
 "src": "https://supertaste.tvbs.com.tw/pack/362009",
 "mapq": "必勝客",
-"icon": "pizza"
+"icon": "pizza",
+"hot": true
 },
 {
 "id": "711-xl-latte10",
@@ -2812,7 +2814,8 @@
 "note": "270 元起；冰炫風換巧克力三角派為 250 元起",
 "src": "https://supertaste.tvbs.com.tw/pack/362071",
 "mapq": "麥當勞",
-"people": 1
+"people": 1,
+"hot": true
 },
 {
 "id": "mcd-200fries",
@@ -2847,7 +2850,8 @@
 "how": "門市點餐",
 "ends": "2026-11-02",
 "src": "https://supertaste.tvbs.com.tw/pack/362071",
-"mapq": "肯德基"
+"mapq": "肯德基",
+"hot": true
 },
 {
 "id": "dicos-face-qq",
@@ -2866,7 +2870,8 @@
 "src": "https://supertaste.tvbs.com.tw/pack/362071",
 "mapq": "德克士",
 "icon": "drumstick",
-"people": 1
+"people": 1,
+"hot": true
 },
 {
 "id": "ph-taro-volcano",
@@ -2885,7 +2890,8 @@
 "note": "數量有限",
 "src": "https://woman.udn.com/woman/story/123162/9813234",
 "mapq": "必勝客",
-"people": 1
+"people": 1,
+"hot": true
 },
 {
 "id": "mos-konjac2",
@@ -2905,6 +2911,93 @@
 "src": "https://woman.udn.com/woman/story/123162/9813234",
 "mapq": "摩斯漢堡",
 "icon": "tea"
+},
+{
+"id": "711-thor-sweets",
+"brand": "7-11",
+"cat": "甜點",
+"meals": [
+"早餐",
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "雷神巧克力聯名：脆脆甜甜圈、脆脆麵包、白雷神泡芙，第 2 件省 10 元",
+"gift": "第 2 件省 $10",
+"how": "門市直接買",
+"ends": "2026-10-27",
+"note": "全通路獨家聯名；另有雷神巧克力霜淇淋",
+"src": "https://www.chinatimes.com/realtimenews/20261015003851-260405",
+"mapq": "7-11",
+"icon": "donut",
+"hot": true,
+"people": 1,
+"added": "2026-10-22",
+"checked": "2026-10-22"
+},
+{
+"id": "fm-taro-sweets",
+"brand": "全家",
+"cat": "甜點",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "芋泥生甜甜圈、芋頭水晶蛋糕（minimore × 主廚陳星緯）",
+"gift": "新品",
+"how": "門市直接買",
+"note": "10/14 起陸續上架，價格以門市為準；另有滿滿奶霜芋頭、紅豆麵包",
+"src": "https://n.yam.com/Article/20261014286323",
+"mapq": "全家",
+"icon": "donut",
+"hot": true,
+"people": 1,
+"added": "2026-10-22",
+"checked": "2026-10-22"
+},
+{
+"id": "zhenzhudan-buckwheat",
+"brand": "珍煮丹",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "秋季限定蕎麥系列：黑糖海鹽麥麥、蕎麥咖啡凍奶茶、可可蕎麥奶",
+"price": 60,
+"how": "門市點餐",
+"ends": "2027-01-05",
+"note": "中杯 60 元起，百貨店價格高 5 元；杯裡放整包蕎麥茶包",
+"src": "https://n.yam.com/Article/20261021120463",
+"mapq": "珍煮丹",
+"icon": "tea",
+"hot": true,
+"people": 1,
+"added": "2026-10-22",
+"checked": "2026-10-22"
+},
+{
+"id": "711-huaweiniao",
+"brand": "7-11",
+"cat": "超商",
+"meals": [
+"早餐",
+"午餐",
+"晚餐"
+],
+"title": "華味鳥聯名：極致棉芯蛋 55 元、博多風味炙烤雞腿排丼 119 元",
+"price": 55,
+"how": "門市直接買",
+"note": "9/28 開賣，賣完為止",
+"src": "https://dailyview.tw/popular/detail/33794",
+"mapq": "7-11",
+"icon": "egg",
+"hot": true,
+"people": 1,
+"added": "2026-10-22",
+"checked": "2026-10-22"
 }
 ],
 "removed": [
