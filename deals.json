@@ -1,5 +1,5 @@
 {
-"updatedAt": "2026/10/22 19:54",
+"updatedAt": "2026/10/23 06:54",
 "deals": [
 {
 "brand": "漢堡王",
@@ -85,7 +85,9 @@
 "people": 1,
 "src": "https://www.chickenmaster.com.tw/",
 "title": "指定商品第二件 8 折",
-"id": "cm-second80"
+"id": "cm-second80",
+"status": "pending",
+"checked": "2026-10-22"
 },
 {
 "brand": "全家",
@@ -153,7 +155,9 @@
 "people": 1,
 "src": "https://today.line.me/tw/v3/article/wJvVxal",
 "title": "自取滿 100 元 7 折（最高折 30 元，可用 3 次）",
-"id": "fp-pickup"
+"id": "fp-pickup",
+"status": "pending",
+"checked": "2026-10-22"
 },
 {
 "brand": "foodpanda",
@@ -190,7 +194,10 @@
 "price": 110,
 "src": "https://info.talk.tw/kfc-coupon/",
 "title": "原味脆雞堡＋原味蛋撻＋小薯＋冰無糖綠茶",
-"id": "kfc-16034"
+"id": "kfc-16034",
+"ends": "2026-10-31",
+"checked": "2026-10-23",
+"note": "新竹湖口、台北光復、台北復興南等少數門市不適用"
 },
 {
 "brand": "肯德基",
@@ -207,7 +214,10 @@
 "price": 142,
 "src": "https://info.talk.tw/kfc-coupon/",
 "title": "咔啦雞腿堡＋4 塊上校雞塊＋原味蛋撻＋冰無糖綠茶",
-"id": "kfc-16037"
+"id": "kfc-16037",
+"ends": "2026-10-31",
+"checked": "2026-10-23",
+"note": "新竹湖口、台北光復、台北復興南等少數門市不適用"
 },
 {
 "brand": "肯德基",
@@ -224,7 +234,10 @@
 "price": 99,
 "src": "https://info.talk.tw/kfc-coupon/",
 "title": "2 個原味脆雞堡（小）＋2 杯冰無糖綠茶",
-"id": "kfc-16720"
+"id": "kfc-16720",
+"ends": "2026-12-29",
+"checked": "2026-10-23",
+"note": "新竹湖口、台北光復、台北復興南等少數門市不適用"
 },
 {
 "brand": "肯德基",
@@ -241,7 +254,10 @@
 "price": 118,
 "src": "https://info.talk.tw/kfc-coupon/",
 "title": "2 個原味脆雞堡（小）＋2 份薯餅",
-"id": "kfc-16722"
+"id": "kfc-16722",
+"ends": "2026-12-29",
+"checked": "2026-10-23",
+"note": "新竹湖口、台北光復、台北復興南等少數門市不適用"
 },
 {
 "brand": "肯德基",
@@ -270,12 +286,13 @@
 "午餐",
 "晚餐"
 ],
-"note": "限部分門市",
+"note": "限部分門市；限時限店，輸入代碼沒出現代表該門市或時段不適用",
 "people": 1,
 "price": 89,
 "src": "https://dealy.tw/shop/kfcclub.com.tw",
 "title": "咔啦雞腿堡＋原味蛋撻",
-"id": "kfc-50475"
+"id": "kfc-50475",
+"checked": "2026-10-23"
 },
 {
 "brand": "肯德基",
@@ -292,7 +309,9 @@
 "price": 399,
 "src": "https://applealmond.com/posts/315897",
 "title": "咔啦脆雞分享桶＋原味蛋撻 6 入",
-"id": "kfc-50476"
+"id": "kfc-50476",
+"checked": "2026-10-23",
+"note": "限時限店，輸入代碼沒出現代表該門市或時段不適用"
 },
 {
 "brand": "肯德基",
@@ -1407,23 +1426,6 @@
 "午餐",
 "晚餐"
 ],
-"title": "9 吋薄脆小披薩＋飲料",
-"price": 111,
-"how": "必勝客 APP 會員線上結帳、外帶自取，每人每天 1 份",
-"code": "15595",
-"ends": "2026-10-22",
-"src": "https://travel.udn.com/travel/story/7193/9823414",
-"mapq": "必勝客",
-"people": 1,
-"id": "ph-15595"
-},
-{
-"brand": "必勝客",
-"cat": "披薩",
-"meals": [
-"午餐",
-"晚餐"
-],
 "title": "大披薩 10 種口味任選",
 "price": 199,
 "people": 2,
@@ -2409,11 +2411,12 @@
 "title": "生日券（隨機一張）：大麥克或勁辣雞腿堡＋中杯飲料",
 "price": 79,
 "how": "麥當勞 APP 會員，生日當月自動發券",
-"note": "隨機發三種之一：主餐＋中飲 79 元、主餐＋小薯 85 元、10 塊雞塊＋中飲 110 元；每張限用一次",
-"src": "https://supertaste.tvbs.com.tw/food/361502",
+"note": "生日當月 APP 發生日券（報導多為主餐＋中飲 79 元、主餐＋小薯 85 元、10 塊雞塊＋中飲 110 元，實際以券面為準），生日月消費滿額另加贈 M Point",
+"src": "https://www.mcdonalds.com/tw/zh-tw/digital/birthdaygift.html",
 "mapq": "麥當勞",
 "bday": true,
-"people": 1
+"people": 1,
+"checked": "2026-10-23"
 },
 {
 "id": "bd-mos",
@@ -2998,22 +3001,97 @@
 "people": 1,
 "added": "2026-10-22",
 "checked": "2026-10-22"
+},
+{
+"id": "qb-halloween",
+"brand": "Q Burger",
+"cat": "早餐店",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "萬聖節可朗芙、造型吐司和蜂蜜蛋餅新品",
+"price": 50,
+"how": "門市點餐",
+"note": "木乃伊、女巫吐司 50 元，害羞幽靈可朗芙 99 元，蜂蜜火腿蛋餅 60 元；週五到週日打卡送小玉米杯，每店每日限 20 份",
+"src": "https://supertaste.tvbs.com.tw/food/361962",
+"mapq": "Q Burger",
+"icon": "toast",
+"hot": true,
+"people": 1,
+"added": "2026-10-23",
+"checked": "2026-10-23"
+},
+{
+"id": "tkk-monsters",
+"brand": "頂呱呱",
+"cat": "炸雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "UNIVERSAL MONSTERS 聯名：呱包獨享餐 195 元、呱呱包派對餐 589 元",
+"price": 195,
+"how": "門市點餐",
+"ends": "2026-11-08",
+"note": "套餐可 69 元加購青花椒鹹酥雞或呱呱雞脆骨；鑰匙圈盲袋 99 元加購",
+"src": "https://cava.tw/lifestyle/travel-food/267383",
+"mapq": "頂呱呱",
+"icon": "drumstick",
+"hot": true,
+"people": 1,
+"added": "2026-10-23",
+"checked": "2026-10-23"
+},
+{
+"id": "dominos-yakiniku",
+"brand": "達美樂",
+"cat": "披薩",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "乾杯燒肉聯名：和牛御豚燒肉大披薩，外帶 5 折起",
+"price": 449,
+"pct": 0.5,
+"how": "外帶點餐",
+"note": "燒肉澎湃套餐 899 元；活動期間請以達美樂公告為準，確認",
+"src": "https://cava.tw/lifestyle/travel-food/267383",
+"mapq": "達美樂",
+"hot": true,
+"people": 1,
+"added": "2026-10-23",
+"checked": "2026-10-23"
+},
+{
+"id": "hilife-tsujiri",
+"brand": "萊爾富",
+"cat": "飲料",
+"meals": [
+"早餐",
+"午餐",
+"晚餐"
+],
+"title": "辻利茶舖聯名：中杯抹茶歐蕾、焙茶歐蕾任選買一送一",
+"price": 70,
+"orig": 140,
+"people": 2,
+"how": "門市點購，限當場領取",
+"note": "平均每杯 35 元；期限未公布，確認",
+"src": "https://www.ettoday.net/news/20261017/3255962.htm",
+"mapq": "萊爾富",
+"icon": "tea",
+"hot": true,
+"added": "2026-10-23",
+"checked": "2026-10-23"
 }
 ],
 "removed": [
 {
-"brand": "麥味登",
-"title": "川味豆漿蛋白麵（嚐鮮價）",
-"why": "使用者回報已結束"
-},
-{
-"brand": "麥當勞",
-"title": "momo 即享券（快閃價）",
-"why": "已過期"
-},
-{
-"brand": "摩斯漢堡",
-"title": "momo 即享券",
+"brand": "必勝客",
+"title": "9 吋薄脆小披薩＋飲料",
 "why": "已過期"
 }
 ]
