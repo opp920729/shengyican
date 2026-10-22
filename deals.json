@@ -1,5 +1,5 @@
 {
-"updatedAt": "2026/10/22 08:46",
+"updatedAt": "2026/10/22 11:34",
 "deals": [
 {
 "brand": "漢堡王",
@@ -1255,23 +1255,6 @@
 "people": 1,
 "mapq": "早安美芝城",
 "id": "mzc-qq"
-},
-{
-"brand": "麥味登",
-"cat": "麵",
-"meals": [
-"早餐",
-"午餐"
-],
-"title": "川味豆漿蛋白麵（嚐鮮價）",
-"price": 95,
-"orig": 105,
-"how": "門市點餐，APP 點餐加 35 元可加豬里肌",
-"note": "嚐鮮價期限依門市公告，請先確認",
-"src": "https://supertaste.tvbs.com.tw/food/361861",
-"people": 1,
-"mapq": "麥味登",
-"id": "mwd-pnoodle"
 },
 {
 "brand": "肯德基",
