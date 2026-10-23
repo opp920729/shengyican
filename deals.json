@@ -1,5 +1,5 @@
 {
-"updatedAt": "2026/10/23 13:16",
+"updatedAt": "2026/10/23 19:58",
 "deals": [
 {
 "brand": "漢堡王",
@@ -849,7 +849,9 @@
 "people": 1,
 "src": "https://supertaste.tvbs.com.tw/food/361747",
 "title": "Uber One 會員滿 450 元免外送費和服務費（4 次）",
-"id": "ue-freeship"
+"id": "ue-freeship",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "brand": "Uber Eats",
@@ -868,7 +870,9 @@
 "people": 1,
 "src": "https://supertaste.tvbs.com.tw/food/361747",
 "title": "Uber One 會員外帶自取滿 179 元 7 折（最高折 60 元，限 5 次）",
-"id": "ue-pickup"
+"id": "ue-pickup",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "brand": "Uber Eats",
@@ -890,7 +894,9 @@
 ],
 "src": "https://www.callingtaiwan.com.tw/%E5%A4%96%E9%80%81%E5%84%AA%E6%83%A0%E7%B8%BD%E6%95%B4%E7%90%86-foodpanda-ubereats/",
 "title": "彰化縣限定：外送滿 149 元 6 折（最高折 60 元）",
-"id": "ue-region-12480"
+"id": "ue-region-12480",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "brand": "Uber Eats",
@@ -912,7 +918,9 @@
 ],
 "src": "https://www.callingtaiwan.com.tw/%E5%A4%96%E9%80%81%E5%84%AA%E6%83%A0%E7%B8%BD%E6%95%B4%E7%90%86-foodpanda-ubereats/",
 "title": "雲林縣限定：外送滿 149 元 6 折（最高折 60 元）",
-"id": "ue-region-14920"
+"id": "ue-region-14920",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "brand": "Uber Eats",
@@ -934,7 +942,9 @@
 ],
 "src": "https://www.callingtaiwan.com.tw/%E5%A4%96%E9%80%81%E5%84%AA%E6%83%A0%E7%B8%BD%E6%95%B4%E7%90%86-foodpanda-ubereats/",
 "title": "基隆市限定：外送滿 149 元 75 折（最高折 40 元）",
-"id": "ue-region-22955"
+"id": "ue-region-22955",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "brand": "Uber Eats",
@@ -956,7 +966,9 @@
 ],
 "src": "https://www.callingtaiwan.com.tw/%E5%A4%96%E9%80%81%E5%84%AA%E6%83%A0%E7%B8%BD%E6%95%B4%E7%90%86-foodpanda-ubereats/",
 "title": "苗栗縣限定：外送滿 149 元 6 折（最高折 60 元）",
-"id": "ue-region-40727"
+"id": "ue-region-40727",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "brand": "Uber Eats",
@@ -978,7 +990,9 @@
 ],
 "src": "https://www.callingtaiwan.com.tw/%E5%A4%96%E9%80%81%E5%84%AA%E6%83%A0%E7%B8%BD%E6%95%B4%E7%90%86-foodpanda-ubereats/",
 "title": "屏東縣限定：外送滿 149 元 6 折（最高折 60 元）",
-"id": "ue-region-42441"
+"id": "ue-region-42441",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "brand": "Uber Eats",
@@ -1000,7 +1014,9 @@
 ],
 "src": "https://www.callingtaiwan.com.tw/%E5%A4%96%E9%80%81%E5%84%AA%E6%83%A0%E7%B8%BD%E6%95%B4%E7%90%86-foodpanda-ubereats/",
 "title": "宜蘭縣限定：外送滿 149 元 6 折（最高折 60 元）",
-"id": "ue-region-46298"
+"id": "ue-region-46298",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "brand": "Uber Eats",
@@ -1022,7 +1038,9 @@
 ],
 "src": "https://www.callingtaiwan.com.tw/%E5%A4%96%E9%80%81%E5%84%AA%E6%83%A0%E7%B8%BD%E6%95%B4%E7%90%86-foodpanda-ubereats/",
 "title": "南投縣限定：外送滿 149 元 6 折（最高折 60 元）",
-"id": "ue-region-47200"
+"id": "ue-region-47200",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "brand": "Uber Eats",
@@ -1045,7 +1063,9 @@
 ],
 "src": "https://www.callingtaiwan.com.tw/%E5%A4%96%E9%80%81%E5%84%AA%E6%83%A0%E7%B8%BD%E6%95%B4%E7%90%86-foodpanda-ubereats/",
 "title": "嘉義市、嘉義縣限定：外送滿 149 元 6 折（最高折 60 元）",
-"id": "ue-region-68875"
+"id": "ue-region-68875",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "brand": "Uber Eats",
@@ -1068,7 +1088,9 @@
 "src": "https://www.callingtaiwan.com.tw/%E5%A4%96%E9%80%81%E5%84%AA%E6%83%A0%E7%B8%BD%E6%95%B4%E7%90%86-foodpanda-ubereats/",
 "title": "台南市限定：外送滿 149 元 5 折（最高折 80 元）",
 "id": "ue-region-86462",
-"note": "另有資料寫 6 折、最高折 60 元，實際折數以 APP 顯示為準"
+"note": "另有資料寫 6 折、最高折 60 元，實際折數以 APP 顯示為準",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "brand": "麥當勞",
@@ -1911,7 +1933,9 @@
 "src": "https://supertaste.tvbs.com.tw/food/361747",
 "mapq": "滷味",
 "people": 1,
-"id": "ue-pickup-luwei"
+"id": "ue-pickup-luwei",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "brand": "全家",
@@ -3334,7 +3358,9 @@
 "mapq": "滷味",
 "people": 1,
 "added": "2026-10-23",
-"checked": "2026-10-23"
+"checked": "2026-10-23",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "id": "711-prima10",
@@ -3548,7 +3574,9 @@
 "mapq": "Uber Eats",
 "people": 1,
 "added": "2026-10-23",
-"checked": "2026-10-23"
+"checked": "2026-10-23",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "id": "ue-region-taitung",
@@ -3572,7 +3600,9 @@
 "mapq": "Uber Eats",
 "people": 1,
 "added": "2026-10-23",
-"checked": "2026-10-23"
+"checked": "2026-10-23",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "id": "ue-region-penghu",
@@ -3596,7 +3626,9 @@
 "mapq": "Uber Eats",
 "people": 1,
 "added": "2026-10-23",
-"checked": "2026-10-23"
+"checked": "2026-10-23",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 },
 {
 "id": "ue-region-kinmen",
@@ -3620,7 +3652,9 @@
 "mapq": "Uber Eats",
 "people": 1,
 "added": "2026-10-23",
-"checked": "2026-10-23"
+"checked": "2026-10-23",
+"buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
+"buyName": "Uber Eats"
 }
 ],
 "removed": [
