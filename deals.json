@@ -1,5 +1,5 @@
 {
-"updatedAt": "2026/10/23 19:58",
+"updatedAt": "2026/10/24 13:09",
 "deals": [
 {
 "brand": "漢堡王",
@@ -328,7 +328,9 @@
 "price": 299,
 "src": "https://applealmond.com/posts/315897",
 "title": "咔啦脆雞分享桶",
-"id": "kfc-50483"
+"id": "kfc-50483",
+"status": "pending",
+"checked": "2026-10-23"
 },
 {
 "brand": "肯德基",
@@ -344,7 +346,9 @@
 "price": 129,
 "src": "https://dealy.tw/shop/kfcclub.com.tw",
 "title": "咔啦雞腿堡＋4 塊雞塊＋可樂",
-"id": "kfc-50514"
+"id": "kfc-50514",
+"status": "pending",
+"checked": "2026-10-23"
 },
 {
 "brand": "金子半之助",
@@ -413,7 +417,9 @@
 "price": 10,
 "src": "https://www.cashfeel.com.tw/article/%E6%9C%80%E6%96%B0-%E9%BA%A5%E7%95%B6%E5%8B%9E-%E5%84%AA%E6%83%A0-%E8%B2%B7%E4%B8%80%E9%80%81%E3%84%A7",
 "title": "得來速加 10 元多一份小薯",
-"id": "mcd-dt-fries"
+"id": "mcd-dt-fries",
+"status": "pending",
+"checked": "2026-10-23"
 },
 {
 "brand": "麥當勞",
@@ -429,7 +435,9 @@
 "price": 10,
 "src": "https://www.cashfeel.com.tw/article/%E6%9C%80%E6%96%B0-%E9%BA%A5%E7%95%B6%E5%8B%9E-%E5%84%AA%E6%83%A0-%E8%B2%B7%E4%B8%80%E9%80%81%E3%84%A7",
 "title": "得來速加 10 元多一份薯餅",
-"id": "mcd-dt-hashbrown"
+"id": "mcd-dt-hashbrown",
+"status": "pending",
+"checked": "2026-10-23"
 },
 {
 "brand": "麥當勞",
@@ -2063,26 +2071,6 @@
 "hot": true
 },
 {
-"brand": "DQ",
-"cat": "冰品",
-"meals": [
-"晚餐"
-],
-"title": "指定暴風雪 5 折",
-"gift": "5 折",
-"pct": 0.5,
-"how": "平日 17:00–20:00 到店，出示交通票證",
-"ends": "2026-10-23",
-"regions": [
-"台北市"
-],
-"note": "只有台北京站店",
-"src": "https://www.marieclaire.com.tw/lifestyle/taste/96393",
-"mapq": "DQ 京站",
-"people": 1,
-"id": "dq-blizzard-half"
-},
-{
 "brand": "頂呱呱",
 "cat": "炸雞",
 "meals": [
@@ -2465,7 +2453,8 @@
 "src": "https://info.talk.tw/2026birthday/",
 "mapq": "摩斯漢堡",
 "bday": true,
-"people": 1
+"people": 1,
+"checked": "2026-10-24"
 },
 {
 "id": "bd-kfc",
@@ -2848,24 +2837,6 @@
 "mapq": "麥當勞",
 "people": 1,
 "hot": true
-},
-{
-"id": "mcd-200fries",
-"brand": "麥當勞",
-"cat": "漢堡速食",
-"meals": [
-"午餐",
-"晚餐",
-"宵夜"
-],
-"title": "中薯：單筆滿 200 元免費送",
-"gift": "送中薯",
-"how": "門市點餐",
-"note": "期限未公布，請向門市確認",
-"src": "https://supertaste.tvbs.com.tw/pack/362071",
-"mapq": "麥當勞",
-"icon": "fries",
-"people": 1
 },
 {
 "id": "kfc-darktart-duo",
@@ -3655,13 +3626,184 @@
 "checked": "2026-10-23",
 "buy": "https://vbtrax.com/track/clicks/4127/c627c2bc9b0428dcfe8dec23d62e9e44256d49c063b2a0f90361b00271401de3c021e7e5593c99616c?subid_1=shengyican",
 "buyName": "Uber Eats"
+},
+{
+"id": "tkk-teaset139",
+"brand": "頂呱呱",
+"cat": "炸雞",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "呱呱包午茶組（限時最低 69 折）",
+"price": 139,
+"how": "門市或線上點餐",
+"ends": "2026-10-26",
+"note": "多人分享組 439 元；套餐可加購辣味雞翅 2 入 75 元、原味雞腿 2 入 89 元；機場門市不適用",
+"src": "https://travel.udn.com/travel/story/7193/9832609",
+"mapq": "頂呱呱",
+"icon": "burger",
+"people": 1,
+"added": "2026-10-24",
+"checked": "2026-10-24"
+},
+{
+"id": "bk-peanut-double",
+"brand": "漢堡王",
+"cat": "漢堡速食",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "花生雙層脆雞堡套餐（花心搗蛋派對）",
+"price": 169,
+"how": "門市點餐",
+"ends": "2026-11-08",
+"note": "雙層花生安格斯牛肉堡套餐 269 元、美式花生重磅雙牛堡套餐 289 元；兒童樂園店、機場店、科技廠店不適用",
+"src": "https://travel.udn.com/travel/story/7193/9832609",
+"mapq": "漢堡王",
+"hot": true,
+"people": 1,
+"added": "2026-10-24",
+"checked": "2026-10-24"
+},
+{
+"id": "ok-luwei-bogo",
+"brand": "OKmart",
+"cat": "滷味",
+"meals": [
+"晚餐",
+"宵夜"
+],
+"title": "冷凍滷味三杯米血、醬燒豆干買一送一",
+"price": 49,
+"orig": 98,
+"people": 2,
+"how": "門市結帳",
+"ends": "2026-11-24",
+"note": "限指定品項",
+"src": "https://supertaste.tvbs.com.tw/pack/362103",
+"mapq": "OK超商",
+"icon": "luwei",
+"added": "2026-10-24",
+"checked": "2026-10-24"
+},
+{
+"id": "ok-sandwich-americano",
+"brand": "OKmart",
+"cat": "超商",
+"meals": [
+"早餐"
+],
+"title": "三明治 6 款任選＋大杯美式",
+"price": 69,
+"how": "門市結帳",
+"ends": "2026-11-24",
+"note": "燻雞火腿或巧克力草莓三明治＋大杯鮮奶拿鐵 59 元；不含極冰品項",
+"src": "https://supertaste.tvbs.com.tw/food/362115",
+"mapq": "OK超商",
+"icon": "toast",
+"people": 1,
+"added": "2026-10-24",
+"checked": "2026-10-24"
+},
+{
+"id": "fm-coffee-2plus2",
+"brand": "全家",
+"cat": "超商",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "Let's Café 大杯特濃美式、特濃拿鐵、厚濃抹茶拿鐵同品項買 2 送 2",
+"gift": "買 2 送 2",
+"pct": 0.5,
+"people": 4,
+"how": "門市結帳",
+"ends": "2026-10-27",
+"src": "https://supertaste.tvbs.com.tw/food/362115",
+"mapq": "全家",
+"icon": "coffee",
+"added": "2026-10-24",
+"checked": "2026-10-24"
+},
+{
+"id": "fm-softserve-2for55",
+"brand": "全家",
+"cat": "冰品",
+"meals": [
+"午餐",
+"晚餐",
+"宵夜"
+],
+"title": "Fami!ce 霜淇淋不限口味 2 支",
+"price": 55,
+"orig": 98,
+"people": 2,
+"how": "門市結帳",
+"ends": "2026-10-27",
+"note": "限有霜淇淋機的門市",
+"src": "https://supertaste.tvbs.com.tw/food/362115",
+"mapq": "全家",
+"icon": "softserve",
+"added": "2026-10-24",
+"checked": "2026-10-24"
+},
+{
+"id": "711-pearl-coffee10",
+"brand": "7-11",
+"cat": "超商",
+"meals": [
+"早餐",
+"午餐"
+],
+"title": "CITY PEARL 咖啡珍珠歐蕾 10 杯",
+"price": 500,
+"orig": 750,
+"people": 10,
+"how": "OPENPOINT APP 行動隨時取寄杯，再到門市兌換",
+"ends": "2026-10-31",
+"note": "每會員限購 4 組，兌換到 12/31",
+"src": "https://supertaste.tvbs.com.tw/food/362115",
+"mapq": "7-11",
+"icon": "coffee",
+"added": "2026-10-24",
+"checked": "2026-10-24"
+},
+{
+"id": "711-fruit-tea10",
+"brand": "7-11",
+"cat": "飲料",
+"meals": [
+"午餐",
+"晚餐"
+],
+"title": "CITY TEA 香鑽水果茶 10 杯",
+"price": 450,
+"orig": 700,
+"people": 10,
+"how": "OPENPOINT APP 行動隨時取寄杯，再到門市兌換",
+"ends": "2026-10-31",
+"note": "每會員限購 4 組，兌換到 12/31",
+"src": "https://supertaste.tvbs.com.tw/food/362115",
+"mapq": "7-11",
+"icon": "tea",
+"added": "2026-10-24",
+"checked": "2026-10-24"
 }
 ],
 "removed": [
 {
-"brand": "必勝客",
-"title": "9 吋薄脆小披薩＋飲料",
+"brand": "DQ",
+"title": "指定暴風雪 5 折",
 "why": "已過期"
+},
+{
+"brand": "麥當勞",
+"title": "中薯：單筆滿 200 元免費送",
+"why": "和另一筆「APP 單筆滿 200 元送中薯」重複"
 }
 ]
 }
